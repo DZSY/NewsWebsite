@@ -1,3 +1,4 @@
+
 function activateCount() {
     if (i == 0) {
         location.href = "/user";
@@ -18,7 +19,6 @@ var i;
 var interval;
 
 $(function() {
-
     $('#login-form-link').click(function(e) {
         $("#login-form").delay(100).fadeIn(100);
         $("#register-form").fadeOut(100);
@@ -127,7 +127,7 @@ $(function() {
                                 username: $('#register-username').val()
                             },
                             message: '该用户名已注册',
-                            delay : 4000
+                            delay : 3000
                         }
                     }
                 },
@@ -169,29 +169,54 @@ $(function() {
                             message: '邮箱不能为空'
                         },
                         emailAddress: {
-                            message: '请输入正确的邮箱地址'
+                            message: '请输入正确的邮箱地址',
                         }
                     }
                 }
             },
-        }).submit(function (e) {
+        })
+    $("#register-submit").on("click", function(e){
+        e.preventDefault();
         $.ajax({
             type: 'POST',
+            url: '/user/ajax_register',
             data: {
                 username: $('#register-username').val(),
+                password: $('#register-password').val(),
+                email: $('#register-email').val()
             },
-            success: function (exist) {
-                if (exist == "{\"valid\":false}") {
-                    $('#login-feedback').text("用户名已存在");
-                    e.preventDefault();
+            success: function (msg) {
+                if (msg == "success") {
+                    $('#register-feedback').css("color", "#3c763d");
+                    $('#register-feedback').html("注册成功，激活码已发送至您的邮箱<br>将在<span id=\"mes\">3</span> 秒后跳转至激活页");
+                    i = 2;
+                    interval = setInterval("activateCount()", 1000);
                 }
-                else return true;
+                else if (msg == "already log in and need activate") {
+                    $('#register-feedback').html("您已登录，无需注册，但需要激活<br>将在<span id=\"mes\">3</span> 秒后跳转至激活页");
+                    i = 2;
+                    interval = setInterval("activateCount()", 1000);
+                }
+                else if (msg == "already activated") {
+                    $('#register-feedback').html("您已登录，无需注册，<br>将在<span id=\"mes\">3</span> 秒后跳转至首页");
+                    i = 2;
+                    interval = setInterval("homeCount()", 1000);
+                }
+                else if (msg == "username exist") {
+                    $('#register-feedback').text("用户名已存在");
+                }
+                else if (msg == "email exist") {
+                    $('#register-feedback').text("邮箱地址已存在");
+                }
+                else {
+                    alert(msg);
+                }
             },
             error: function (msg) {
-                e.preventDefault();
-                alert("出现错误了:" + msg);
+                alert("出现错误了:" + msg.text);
+                return;
             }
         })
-    })
+    });
 });
 

@@ -113,7 +113,7 @@
                                             <input type="text" name="username" id="register-username" tabindex="1" class="form-control" placeholder="请输入用户名" data-minlength="6" value="">
                                         </div>
                                         <div class="form-group">
-                                            <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="请输入邮箱" value="">
+                                            <input type="email" name="email" id="register-email" tabindex="1" class="form-control" placeholder="请输入邮箱" value="">
                                         </div>
                                         <div class="form-group">
                                             <input type="password" name="password" id="register-password" tabindex="2" class="form-control" placeholder="输入密码" data-minlength="6">

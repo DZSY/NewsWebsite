@@ -48,7 +48,12 @@
     <bean id="usersDAO" class="com.dzsy.dao.UserDAO">
         <property name="sessionFactory" ref="sessionFactory"></property>
     </bean>
+    <bean id="activationDAO" class="com.dzsy.dao.ActivatingDAO">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
     <bean id="userService" class="com.dzsy.service.UserService">
         <property name="userDao" ref="usersDAO"></property>
+        <property name="activatingDao" ref="activationDAO"></property>
     </bean>
+
 </beans>

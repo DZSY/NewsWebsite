@@ -23,18 +23,14 @@ public class User {
     @Column(name="email",length=30)
     private String email;
 
-    @Column(name="activation_code",length=6)
-    private String activation;
-
 
 
     public User () {}
 
-    public User (String username, String password, String email, String activation) {
+    public User (String username, String password, String email) {
         this.username = username;
         this.password = password;
         this.email = email;
-        this.activation = activation;
     }
 
     public String getUsername() {
@@ -60,17 +56,6 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
-
-
-    public String getActivation() {
-        return activation;
-    }
-
-    public void setActivation(String activation) {
-        this.activation = activation;
-    }
-
-
 
     public void display(){
         System.out.println(username + " " + password + " " + email);

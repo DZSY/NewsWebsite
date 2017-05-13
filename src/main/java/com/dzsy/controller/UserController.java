@@ -2,9 +2,8 @@ package com.dzsy.controller;
 
 import com.dzsy.service.UserService;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
@@ -26,6 +25,17 @@ public class UserController {
             return "activate";
         else
             return "error";
+    }
+
+    @RequestMapping(value = "/logout", method = RequestMethod.GET)
+    public ModelAndView logout(HttpSession httpSession) {
+        httpSession.removeAttribute("username");
+        httpSession.removeAttribute("activationCode");
+        httpSession.removeAttribute("activated");
+
+        ModelAndView modelAndView = new ModelAndView("redirect:/");
+
+        return modelAndView;
     }
 
     /*
@@ -64,20 +74,13 @@ public class UserController {
     public @ResponseBody String ajaxActivate(@RequestParam String activation, HttpSession httpSession) {
         if (httpSession.getAttribute("username") == null || httpSession.getAttribute("activationCode") == null)
             return "error";
-        else if (activation != httpSession.getAttribute("activationCode"))
+        else if (!activation.equals(httpSession.getAttribute("activationCode")))
             return "wrong activation code";
         else {
             httpSession.setAttribute("activated", true);
             return "success";
         }
     }
-/*
-    @RequestMapping(value = "/register", method = RequestMethod.POST)
-    public String addStudent(@ModelAttribute("SpringWeb")User user, ModelMap model) {
-
-
-        return "result";
-    }*/
 
     @RequestMapping(value = "/ajax_register", method = RequestMethod.POST)
     public @ResponseBody String register(@RequestParam String username, @RequestParam String password, @RequestParam String email, HttpSession httpSession) {
@@ -92,32 +95,10 @@ public class UserController {
         else if (service.isEmailExist(email))
             return "email exist";
         else {
+            String activation = service.Register(username, password, email);
+            httpSession.setAttribute("activationCode", activation);
             httpSession.setAttribute("username", username);
-
-            return "success ";
+            return "success";
         }
     }
-/*
-    @RequestMapping(value="/addUser", method=RequestMethod.POST)
-    public ModelAndView addUser(@ModelAttribute @Valid User user, BindingResult result) {
-        ModelAndView view = new ModelAndView("redirect:/post");
-
-        if(result.hasErrors()) {
-            List<FieldError> errors = result.getFieldErrors();
-            for(FieldError err : errors) {
-                System.out.println("ObjectName:" + err.getObjectName() + "\tFieldName:" + err.getField()
-                        + "\tFieldValue:" + err.getRejectedValue() + "\tMessage:" + err.getDefaultMessage());
-            }
-            view.addObject("users", users);
-            return view;
-        }
-
-        user.setId(users.size() + 1);
-        user.getCustomers().get(0).setId(1);
-        user.getCustomers().get(0).setUser(user);
-        users.add(user);
-        view.addObject("users", users);
-        return view;
-    }*/
-
 }

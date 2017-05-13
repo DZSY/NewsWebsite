@@ -1,5 +1,13 @@
 function activateCount() {
     if (i == 0) {
+        location.href = "/user";
+        clearInterval(interval);
+    }
+    document.getElementById("mes").innerHTML = i;
+    i--;
+}
+function homeCount() {
+    if (i == 0) {
         location.href = "/";
         clearInterval(interval);
     }
@@ -45,16 +53,21 @@ $(function() {
             },
             success: function (msg) {
                 if (msg == "success") {
-                    $('#login-feedback').css("color","#3c763d");
-                    $('#login-feedback').html("激活成功，将在<span id=\"mes\">3</span> 秒后跳转至首页");
+                    $('#activate-feedback').css("color", "#3c763d");
+                    $('#activate-feedback').html("激活成功，将在<span id=\"mes\">3</span> 秒后跳转至首页");
                     i = 2;
-                    interval = setInterval("activateCount()", 1000);
+                    interval = setInterval("homeCount()", 1000);
+                }
+                if (msg == "error") {
+                    $('#activate-feedback').html("激活状态异常，将在<span id=\"mes\">3</span> 秒后跳转至首页");
+                    i = 2;
+                    interval = setInterval("homeCount()", 1000);
                 }
                 else if (msg == "wrong activation code") {
-                    $('#login-feedback').text("激活码错误，请重新输入");
+                    $('#activate-feedback').text("激活码不正确，请重新输入");
                 }
                 else {
-                    location.href("error");
+                    alert(msg);
                 }
             },
             error: function (msg) {

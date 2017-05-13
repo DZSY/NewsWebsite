@@ -44,7 +44,7 @@
                 <a href="#"><i class="fa fa-fw fa-trophy"></i>  最新资讯  </a>
             </li>
             <li>
-                <a href="/user"><i class="fa fa-fw fa-user"></i>  注销  </a>
+                <a href="/user/logout" ><i class="fa fa-fw fa-user"></i>  注销  </a>
             </li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-search"></i>  搜索  <span class="caret"></span></a>
