@@ -56,4 +56,11 @@
         <property name="activatingDao" ref="activationDAO"></property>
     </bean>
 
+    <bean id="newsColumnDAO" class="com.dzsy.dao.NewsColumnDAO">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    <bean id="newsColumnService" class="com.dzsy.service.NewsColumnService">
+        <property name="newsColumnDao" ref="newsColumnDAO"></property>
+    </bean>
+
 </beans>

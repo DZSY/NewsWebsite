@@ -14,28 +14,37 @@ import static java.lang.Thread.sleep;
 
 @Component("taskJob")
 public class TaskJob {
-    public static CrawlerDB crawlerDB = new CrawlerDB();
 
-    //每5分钟爬1分钟
-    @Scheduled(fixedRate = 300000)
+    public CrawlerDB crawlerDB;
+    private List<Crawler> crawlers;
+
+    TaskJob() {
+        super();
+        crawlerDB = new CrawlerDB();
+        crawlers = new LinkedList<>();
+        crawlers.add(new XinhuaCrawler(crawlerDB));
+    }
+    //每10分钟爬一次，每个新闻门户网站爬5分钟
+    @Scheduled(fixedRate = 600000)
     public void job(){
-        Crawler crawler = new XinhuanetCrawler(crawlerDB);
-        crawler.start();
-        try { sleep(60000);}
-        catch (InterruptedException e) {}
-        crawler.stop();
-        System.out.println("Stop Crawling XinhuaNet");
+        for (Crawler crawler : crawlers) {
+            crawler.start();
+            try { sleep(300000);}
+            catch (InterruptedException e) {continue;}
+            crawler.stop();
+        }
     }
 
-    //每5分钟爬1分钟
-    @Scheduled(fixedRate = 300000)
+    @Scheduled(fixedRate = 6000000)
     public void job2(){
-        Crawler crawler = new SohuCrawler(crawlerDB);
-        crawler.start();
-        try { sleep(60000);}
-        catch (InterruptedException e) {}
-        crawler.stop();
-        System.out.println("Stop Crawling Sohu");
+        try {
+            crawlerDB.finalize();
+        } catch (Throwable e) {
+            e.printStackTrace();
+        } finally {
+            crawlerDB = new CrawlerDB();
+            crawlers = new LinkedList<>();
+            crawlers.add(new XinhuaCrawler(crawlerDB));
+        }
     }
-
 }

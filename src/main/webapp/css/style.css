@@ -1,5 +1,4 @@
 @import "flat-ui.min.css";
-@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css";
 @import "animate.min.css";
 /*-------------------------------*/
 /*           VARIABLES           */
@@ -7,11 +6,6 @@
 body {
   position: relative;
   overflow-x: hidden;
-}
-body,
-html {
-  height: 100%;
-  background-color: #b4b4b4;
 }
 .nav .open > a {
   background-color: transparent;
@@ -33,13 +27,13 @@ html {
   transition: all 0.5s ease;
 }
 #wrapper.toggled {
-  padding-left: 220px;
+  padding-left: 200px;
 }
 #wrapper.toggled #sidebar-wrapper {
   width: 200px;
 }
 #wrapper.toggled #page-content-wrapper {
-  margin-right: -220px;
+  margin-right: -200px;
   position: absolute;
 }
 #sidebar-wrapper {
@@ -48,8 +42,8 @@ html {
   -webkit-transition: all 0.5s ease;
   background: #ffffff;
   height: 100%;
-  left: 220px;
-  margin-left: -220px;
+  left: 200px;
+  margin-left: -200px;
   overflow-x: hidden;
   overflow-y: auto;
   transition: all 0.5s ease;
@@ -72,7 +66,7 @@ html {
   padding: 0;
   position: absolute;
   top: 0;
-  width: 220px;
+  width: 200px;
 }
 .sidebar-nav li {
   display: inline-block;
@@ -300,10 +294,6 @@ body a:hover {
   color: #ffffff;
 }
 
-/* log in css */
-body {
-  padding-top: 90px;
-}
 .panel-login {
   border-color: #ccc;
   -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
@@ -372,15 +362,6 @@ body {
   color: #fff;
   background-color: #53A3CD;
   border-color: #53A3CD;
-}
-.forgot-password {
-  text-decoration: underline;
-  color: #888;
-}
-.forgot-password:hover,
-.forgot-password:focus {
-  text-decoration: underline;
-  color: #666;
 }
 
 .btn-register {

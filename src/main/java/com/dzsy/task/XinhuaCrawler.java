@@ -15,26 +15,36 @@ import java.util.List;
  * Created by positif on 14/05/2017.
  */
 
-public class XinhuanetCrawler implements Crawler{
+public class XinhuaCrawler implements Crawler{
 
 
     private boolean stop = false;
     public CrawlerDB crawlerDb;
 
-    XinhuanetCrawler(CrawlerDB crawlerDB) {
+    XinhuaCrawler(CrawlerDB crawlerDB) {
         this.crawlerDb = crawlerDB;
     }
 
     public void stop () {stop = true;}
 
     public void start() {
-        try {
-            synchronized (crawlerDb) {
-                crawlerDb.runSQL("TRUNCATE crawled;");
-                crawl("http://news.xinhuanet.com");
+        (new Thread(new Runnable() {
+            @Override
+            public void run() {
+                synchronized (crawlerDb) {
+                    try {
+                        crawlerDb.runSQL("TRUNCATE crawled;");
+                    } catch (SQLException e) {
+                        return;
+                    }
+                    System.out.println("Start Crawling XinhuaNet...");
+                    crawl("http://news.xinhuanet.com");
+                    System.out.println("Stop Crawling XinhuaNet");
+                }
             }
-        } catch (SQLException e) {}
+        })).start();
     }
+
 
     public void crawl(String url) {
         List<String> list = new LinkedList<>();
@@ -97,8 +107,6 @@ public class XinhuanetCrawler implements Crawler{
                             news_column = "能源";
                         } else if (URL.contains("renshi")) {
                             news_column = "人事";
-                        } else if (URL.contains("energy")) {
-                            news_column = "能源";
                         } else if (URL.contains("sike")) {
                             news_column = "思客";
                         } else if (URL.contains("health")) {

@@ -17,7 +17,7 @@
     var interval = setInterval("fun()", 1000);
     function fun() {
         if (i == 0) {
-            window.location.href = "/home";
+            window.location.href = "/";
             clearInterval(interval);
         }
         document.getElementById("mes").innerHTML = i;

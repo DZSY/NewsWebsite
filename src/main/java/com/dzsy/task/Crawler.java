@@ -6,6 +6,4 @@ package com.dzsy.task;
 public interface Crawler {
     void start();
     void stop();
-    void crawl(String URL);
-
 }

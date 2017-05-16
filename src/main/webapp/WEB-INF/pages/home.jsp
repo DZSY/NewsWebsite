@@ -3,26 +3,12 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>新新新闻网-首页</title>
-    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='css/bootstrap.min.css'>
     <link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
     <link rel="stylesheet" href="css/style.css">
-    <!--[if IE]>
-    <script src="http://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
 </head>
 <body>
-<!-- <div class="htmleaf-container">
-    <header class="htmleaf-header">
-        <h1>超酷Bootstrap 3 隐藏滑动侧边栏菜单 <span>Awesome Bootstrap 3 Sidebar Navigation</span></h1>
-        <div class="htmleaf-links">
-            <a class="htmleaf-icon icon-htmleaf-home-outline" href="http://www.htmleaf.com/" title="jQuery之家" target="_blank"><span> jQuery之家</span></a>
-            <a class="htmleaf-icon icon-htmleaf-arrow-forward-outline" href="http://www.htmleaf.com/jQuery/Menu-Navigation/201610124098.html" title="返回下载页" target="_blank"><span> 返回下载页</span></a>
-        </div>
-    </header>
-</div> -->
 <div id="wrapper">
     <div class="overlay"></div>
 
@@ -35,19 +21,19 @@
                 </a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-fw fa-home"></i>  首页  </a>
+                <a href="#"><i class="glyphicon glyphicon-home"></i>  首页  </a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-fw fa-flag"></i>  新闻栏目  </a>
+                <a href="/column"><i class="glyphicon glyphicon-th-list"></i>  新闻栏目  </a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-fw fa-trophy"></i>  最新资讯  </a>
+                <a href="#"><i class="glyphicon glyphicon-globe"></i>  最新资讯  </a>
             </li>
             <li>
-                <a href="/user"><i class="fa fa-fw fa-user"></i>  注册/登录  </a>
+                <a href="/user"><i class="glyphicon glyphicon-user"></i>  注册/登录  </a>
             </li>
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-search"></i>  搜索  <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i>  搜索  <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
                     <input type="text" class="form-control" placeholder="请输入关键词" />
                     <li><a href="#">按标题搜索</a></li>
@@ -55,7 +41,7 @@
                 </ul>
             </li>
             <li>
-                <a href="#"><i class="fa fa-fw fa-mobile icon-large"></i>  客户端下载  </a>
+                <a href="#"><i class="glyphicon glyphicon-phone"></i>  客户端下载  </a>
             </li>
         </ul>
     </nav>

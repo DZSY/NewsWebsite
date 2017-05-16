@@ -58,7 +58,7 @@ $(function() {
                     i = 2;
                     interval = setInterval("homeCount()", 1000);
                 }
-                if (msg == "error") {
+                else if (msg == "error") {
                     $('#activate-feedback').html("激活状态异常，将在<span id=\"mes\">3</span> 秒后跳转至首页");
                     i = 2;
                     interval = setInterval("homeCount()", 1000);
