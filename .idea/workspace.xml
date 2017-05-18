@@ -2,35 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e31f7ab-d3e6-4525-a731-488a197d0dab" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dzsy/controller/NewsColumnController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dzsy/dao/NewsColumnDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dzsy/entity/NewsColumn.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dzsy/service/NewsColumnService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/columns.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/columns_online.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/dzsy/task/SohuCrawler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/springmvc/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/dzsy/task/XinhuanetCrawler.java" afterPath="$PROJECT_DIR$/src/main/java/com/dzsy/task/XinhuaCrawler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/task/TaskJob.class" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/task/TaskJob.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dzsy/entity/News.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dzsy/entity/NewsSkeleton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/latest.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/news.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/singlecolumn.jsp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/css/htmleaf-demo.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/script/activate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/script/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/script/bootstrapvalidator.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/script/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/script/user.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/springmvc/css/htmleaf-demo.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/springmvc/script/activate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/springmvc/script/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/springmvc/script/bootstrapvalidator.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/springmvc/script/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/springmvc/script/user.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dzsy/controller/NewsColumnController$1.class" afterPath="$PROJECT_DIR$/target/classes/com/dzsy/controller/NewsColumnController$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dzsy/controller/NewsColumnController.class" afterPath="$PROJECT_DIR$/target/classes/com/dzsy/controller/NewsColumnController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dzsy/controller/UserController.class" afterPath="$PROJECT_DIR$/target/classes/com/dzsy/controller/UserController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dzsy/dao/ActivatingDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/dzsy/dao/ActivatingDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dzsy/dao/NewsColumnDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/dzsy/dao/NewsColumnDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dzsy/service/NewsColumnService.class" afterPath="$PROJECT_DIR$/target/classes/com/dzsy/service/NewsColumnService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dzsy/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/com/dzsy/service/UserService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dzsy/task/XinhuaCrawler.class" afterPath="$PROJECT_DIR$/target/classes/com/dzsy/task/XinhuaCrawler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/controller/NewsColumnController$1.class" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/controller/NewsColumnController$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/controller/NewsColumnController.class" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/controller/NewsColumnController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/controller/UserController.class" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/controller/UserController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/dao/ActivatingDAO.class" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/dao/ActivatingDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/dao/NewsColumnDAO.class" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/dao/NewsColumnDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/service/NewsColumnService.class" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/service/NewsColumnService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/service/UserService.class" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/service/UserService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/task/XinhuaCrawler.class" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/task/XinhuaCrawler.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dzsy/task/Crawler.java" afterPath="$PROJECT_DIR$/src/main/java/com/dzsy/task/Crawler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dzsy/task/TaskJob.java" afterPath="$PROJECT_DIR$/src/main/java/com/dzsy/task/TaskJob.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dzsy/controller/NewsColumnController.java" afterPath="$PROJECT_DIR$/src/main/java/com/dzsy/controller/NewsColumnController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dzsy/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/dzsy/controller/UserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dzsy/dao/ActivatingDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/dzsy/dao/ActivatingDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dzsy/dao/NewsColumnDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/dzsy/dao/NewsColumnDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dzsy/dao/UserDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/dzsy/dao/UserDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dzsy/service/NewsColumnService.java" afterPath="$PROJECT_DIR$/src/main/java/com/dzsy/service/NewsColumnService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dzsy/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/dzsy/service/UserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dzsy/task/XinhuaCrawler.java" afterPath="$PROJECT_DIR$/src/main/java/com/dzsy/task/XinhuaCrawler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/src/main/resources/mvc-dispatcher-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/error.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/error.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/activate.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/activate.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/columns.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/columns.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/home.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/home.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/home_online.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/home_online.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/target/classes/mvc-dispatcher-servlet.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/mvc-dispatcher-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/error.jsp" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/error.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/activate.jsp" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/activate.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/columns.jsp" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/columns.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/home.jsp" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/home.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/home_online.jsp" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/home_online.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/target/springmvc/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/user.jsp" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/user.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/css/style.css" afterPath="$PROJECT_DIR$/target/springmvc/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/script/activate.js" afterPath="$PROJECT_DIR$/target/springmvc/script/activate.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,37 +69,91 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NewsColumnController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/controller/NewsColumnController.java">
+      <file leaf-file-name="latest.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/latest.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+            <state relative-caret-position="15">
+              <caret line="51" column="13" lean-forward="false" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewsColumn.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/entity/NewsColumn.java">
+      <file leaf-file-name="user.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="29" />
+            <state relative-caret-position="2280">
+              <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/entity/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activate.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/activate.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="56">
+              <caret line="112" column="9" lean-forward="false" selection-start-line="112" selection-start-column="9" selection-end-line="112" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewsColumnDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/dao/NewsColumnDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1005">
+              <caret line="77" column="103" lean-forward="false" selection-start-line="77" selection-start-column="98" selection-end-line="77" selection-end-column="103" />
               <folding>
-                <element signature="e#887#888#0" expanded="true" />
-                <element signature="e#933#934#0" expanded="true" />
+                <marker date="1495026894000" expanded="true" signature="841:878" ph="SELECT DISTI... news" />
+                <marker date="1495026894000" expanded="true" signature="841:894" ph="SELECT DISTI... news" />
+                <marker date="1495026894000" expanded="true" signature="1197:1234" ph="SELECT DISTI... news" />
+                <marker date="1495026894000" expanded="true" signature="1197:1240" ph="SELECT DISTI... news" />
+                <marker date="1495026894000" expanded="true" signature="1197:1241" ph="SELECT DISTI... news" />
+                <marker date="1495026894000" expanded="true" signature="1197:1255" ph="SELECT DISTI... news" />
+                <marker date="1495026894000" expanded="true" signature="1605:1697" ph="SELECT * FRO... user" />
+                <marker date="1495026894000" expanded="true" signature="2091:2115" ph="SELECT news_... news" />
+                <marker date="1495026894000" expanded="true" signature="2091:2131" ph="SELECT news_... news" />
+                <marker date="1495026894000" expanded="true" signature="2172:2196" ph="SELECT DISTI... news" />
+                <marker date="1495026894000" expanded="true" signature="2172:2203" ph="SELECT news_... news" />
+                <marker date="1495026894000" expanded="true" signature="2172:2237" ph="SELECT news_... news" />
+                <marker date="1495026894000" expanded="true" signature="2172:2254" ph="SELECT news_... news" />
+                <marker date="1495026894000" expanded="true" signature="2612:2647" ph="SELECT news_... " />
+                <marker date="1495026894000" expanded="true" signature="2612:2687" ph="SELECT news_... " />
+                <marker date="1495026894000" expanded="true" signature="2745:2861" ph="SELECT news_... news" />
+                <marker date="1495026894000" expanded="true" signature="2745:2870" ph="SELECT news_... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="columns.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/columns.jsp">
+      <file leaf-file-name="home.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/home.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+            <state relative-caret-position="15">
+              <caret line="32" column="32" lean-forward="false" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -86,14 +168,13 @@
         <option value="CSS File" />
         <option value="spring-beans.schema" />
         <option value="JavaScript File" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>has-error</find>
       <find>font</find>
       <find>color</find>
       <find>springmvc</find>
@@ -123,6 +204,7 @@
       <find>220</find>
       <find>font-size</find>
       <find>location</find>
+      <find>activation</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -136,13 +218,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/script/login.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/controller/domain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/domain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/bean/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/ajax/ValidationController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/ajax/ValidatorController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/beans/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dzsy/mappers/UserMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dzsy/DAOs/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
@@ -154,39 +229,46 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login_success.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/activate_success.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/dzsy/controller/ActivateController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/dzsy/entity/User.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-hibernate.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/dzsy/service/ActivatingService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/entity/Activation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/dao/ActivatingDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/activate.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/script/user.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/script/activate.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/dzsy/task/XinhuanetCrawler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dzsy/task/XinhuanCrawler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dzsy/task/Crawler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dzsy/task/TaskJob.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/dao/UserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mvc-dispatcher-servlet.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dzsy/controller/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/error.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/newscolumns.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/service/NewsColumnService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/dao/NewsColumnDAO.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/columns_online.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/home_online.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/home.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/style.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/aColumn.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/dzsy/entity/NewsColumn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/task/XinhuaCrawler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/controller/NewsColumnController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mvc-dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/entity/NewsSkeleton.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/entity/New.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/singlecolumn.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/service/NewsColumnService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/columns.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/entity/News.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/task/XinhuaCrawler.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/style.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/news.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/home.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/dao/NewsColumnDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/controller/NewsColumnController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/latest.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/activate.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/dao/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/entity/Activation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/dao/ActivatingDAO.java" />
       </list>
     </option>
   </component>
@@ -210,10 +292,24 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="springmvc Maven Webapp" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="5" />
     <option name="y" value="18" />
-    <option name="width" value="1274" />
+    <option name="width" value="1275" />
     <option name="height" value="782" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -234,8 +330,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -340,7 +434,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="script" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -566,7 +660,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -584,6 +680,9 @@
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/fonts" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/css" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/script" />
       <recent name="$PROJECT_DIR$/src/main/java/com/dzsy/task" />
     </key>
   </component>
@@ -1071,38 +1170,44 @@
       <workItem from="1494866822085" duration="2270000" />
       <workItem from="1494901218982" duration="1277000" />
       <workItem from="1494904910630" duration="1543000" />
-      <workItem from="1494907534435" duration="12749000" />
+      <workItem from="1494907534435" duration="15128000" />
+      <workItem from="1494983285521" duration="5453000" />
+      <workItem from="1494989541978" duration="3509000" />
+      <workItem from="1495010965925" duration="2848000" />
+      <workItem from="1495016663612" duration="9662000" />
+      <workItem from="1495031394680" duration="2157000" />
+      <workItem from="1495102652580" duration="732000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150150000" />
+    <option name="totallyTimeSpent" value="176890000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="5" y="18" width="1274" height="782" extended-state="0" />
+    <frame x="5" y="18" width="1275" height="782" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289855" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289855" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6666667" sideWeight="0.5028386" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3478261" sideWeight="0.4971614" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3478261" sideWeight="0.4971614" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289855" sideWeight="0.4971614" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21672077" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23276561" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4710145" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4710145" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1150,19 +1255,13 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/dzsy/controller/NewsColumnController.java</url>
-          <line>66</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/dzsy/controller/UserController.java</url>
+          <line>77</line>
           <properties />
-          <option name="timeStamp" value="103" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/dzsy/controller/NewsColumnController.java</url>
-          <line>96</line>
-          <properties />
-          <option name="timeStamp" value="104" />
+          <option name="timeStamp" value="125" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="105" />
+      <option name="time" value="133" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1171,44 +1270,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.8.RELEASE/spring-webmvc-4.3.8.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="405" column="0" lean-forward="false" selection-start-line="405" selection-start-column="0" selection-end-line="405" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.8.RELEASE/spring-webmvc-4.3.8.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="531" column="0" lean-forward="false" selection-start-line="531" selection-start-column="0" selection-end-line="531" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.8.RELEASE/spring-core-4.3.8.RELEASE.jar!/org/springframework/util/PropertyPlaceholderHelper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/script/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/script/activate.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/activate_error.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bootstrapValidator.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="120" lean-forward="false" selection-start-line="10" selection-start-column="113" selection-end-line="10" selection-end-column="120" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login_success.jsp" />
     <entry file="file://$PROJECT_DIR$/springmvc.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1227,70 +1288,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/service/ActivatingService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/persistence-mysql.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/task/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/script/bootstrap.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/script/activate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="62" column="26" lean-forward="false" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/script/activate.js" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/task/SohuCrawler.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/task/CrawlerDB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="17" column="47" lean-forward="true" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/task/Crawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-hibernate.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="48" column="57" lean-forward="true" selection-start-line="48" selection-start-column="57" selection-end-line="48" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mvc-dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="61" column="31" lean-forward="false" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1301,18 +1305,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/dao/ActivatingDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="40" column="33" lean-forward="true" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/error.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
           <caret line="19" column="37" lean-forward="false" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1320,49 +1316,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="e#832#833#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.8.RELEASE/spring-web-4.3.8.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/dao/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="43" column="24" lean-forward="false" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
-          <folding>
-            <marker date="1494833067000" expanded="true" signature="726:785" ph="select user_... user" />
-            <marker date="1494833067000" expanded="true" signature="1101:1153" ph="select email... user" />
-            <marker date="1494833067000" expanded="true" signature="1512:1605" ph="SELECT user_... user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/service/NewsColumnService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="66" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#481#482#0" expanded="false" />
-            <element signature="e#539#540#0" expanded="false" />
-            <element signature="e#675#676#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/entity/Activation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1370,7 +1323,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1378,15 +1330,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/htmleaf-demo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1394,39 +1337,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
           <caret line="65" column="17" lean-forward="true" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-208">
-          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="31" column="58" lean-forward="false" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bootstrap-theme.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bootstrap-theme.min.css" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/flat-ui.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
           <caret line="3" column="5295" lean-forward="false" selection-start-line="3" selection-start-column="5295" selection-end-line="3" selection-end-column="5295" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1434,102 +1352,273 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="4" column="47151" lean-forward="false" selection-start-line="4" selection-start-column="47145" selection-end-line="4" selection-end-column="47151" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/script/jquery.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/persistence-mysql.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="176" column="15" lean-forward="true" selection-start-line="176" selection-start-column="15" selection-end-line="176" selection-end-column="15" />
-          <folding />
+        <state relative-caret-position="195">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/task/XinhuaCrawler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/htmleaf-demo.css" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/script/bootstrap.min.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/script/user.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-hibernate.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1045">
-          <caret line="109" column="26" lean-forward="false" selection-start-line="109" selection-start-column="26" selection-end-line="109" selection-end-column="26" />
+        <state relative-caret-position="-214">
+          <caret line="48" column="57" lean-forward="false" selection-start-line="48" selection-start-column="57" selection-end-line="48" selection-end-column="57" />
           <folding>
-            <marker date="1494919633000" expanded="true" signature="1497:1548" ph="SELECT * FRO... crawled" />
-            <marker date="1494919633000" expanded="true" signature="1696:1747" ph="INSERT INTO crawled" />
-            <marker date="1494919633000" expanded="true" signature="5428:5476" ph="select * fro... news" />
-            <marker date="1494919633000" expanded="true" signature="7544:7647" ph="INSERT INTO news" />
+            <element signature="n#prop#0;n#props#0;n#property#2;n#bean#0;n#beans#0;n#!!top" expanded="false" />
+            <element signature="n#prop#1;n#props#0;n#property#2;n#bean#0;n#beans#0;n#!!top" expanded="false" />
+            <element signature="e#2148#2173#0" expanded="false" />
+            <element signature="e#2212#2225#0" expanded="false" />
+            <element signature="e#2269#2283#0" expanded="false" />
+            <element signature="e#2327#2341#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/dao/NewsColumnDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mvc-dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="56" column="104" lean-forward="false" selection-start-line="56" selection-start-column="104" selection-end-line="56" selection-end-column="104" />
-          <folding>
-            <marker date="1494869191000" expanded="true" signature="932:969" ph="SELECT DISTI... news" />
-            <marker date="1494869191000" expanded="true" signature="932:985" ph="SELECT DISTI... news" />
-            <marker date="1494869191000" expanded="true" signature="1281:1318" ph="SELECT DISTI... news" />
-            <marker date="1494869191000" expanded="true" signature="1281:1324" ph="SELECT DISTI... news" />
-            <marker date="1494869191000" expanded="true" signature="1281:1325" ph="SELECT DISTI... news" />
-            <marker date="1494869191000" expanded="true" signature="1281:1339" ph="SELECT DISTI... news" />
-            <marker date="1494869191000" expanded="true" signature="1689:1781" ph="SELECT * FRO... user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="21" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="35" column="66" lean-forward="false" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/controller/NewsColumnController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/activate.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="808">
-          <caret line="109" column="61" lean-forward="true" selection-start-line="109" selection-start-column="61" selection-end-line="109" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/script/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="16" />
+        <state relative-caret-position="552">
+          <caret line="39" column="29" lean-forward="false" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/entity/NewsColumn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="29" />
-          <folding>
-            <element signature="e#887#888#0" expanded="true" />
-            <element signature="e#933#934#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="195">
+          <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="68" column="23" lean-forward="false" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/entity/NewsSkeleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.8.RELEASE/spring-web-4.3.8.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="122" column="50" lean-forward="true" selection-start-line="122" selection-start-column="50" selection-end-line="122" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/task/XinhuaCrawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="186" column="66" lean-forward="true" selection-start-line="186" selection-start-column="66" selection-end-line="186" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/task/Crawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="228" column="16" lean-forward="false" selection-start-line="228" selection-start-column="16" selection-end-line="228" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/entity/News.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="65" column="33" lean-forward="false" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/news.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="71" column="86" lean-forward="false" selection-start-line="71" selection-start-column="86" selection-end-line="71" selection-end-column="86" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/columns.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        <state relative-caret-position="188">
+          <caret line="72" column="36" lean-forward="false" selection-start-line="72" selection-start-column="36" selection-end-line="72" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="292" column="7" lean-forward="false" selection-start-line="292" selection-start-column="7" selection-end-line="292" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/singlecolumn.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1560">
+          <caret line="104" column="28" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/service/NewsColumnService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="34" column="15" lean-forward="false" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/controller/NewsColumnController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="154" column="40" lean-forward="false" selection-start-line="154" selection-start-column="40" selection-end-line="154" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="initializer##0;class#1058:1928" expanded="false" />
+            <element signature="initializer##0;class#1994:2841" expanded="false" />
+            <element signature="method#goColumn#0;class#NewsColumnController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2280">
+          <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="141" column="49" lean-forward="true" selection-start-line="141" selection-start-column="49" selection-end-line="141" selection-end-column="49" />
+          <folding>
+            <element signature="method#Register#0;class#UserService#0" expanded="false" />
+            <element signature="method#sendEmail#0;class#UserService#0" expanded="false" />
+            <element signature="e#5386#5387#0" expanded="true" />
+            <element signature="e#5442#5443#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="81" column="84" lean-forward="false" selection-start-line="81" selection-start-column="84" selection-end-line="81" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/dao/NewsColumnDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="77" column="103" lean-forward="false" selection-start-line="77" selection-start-column="98" selection-end-line="77" selection-end-column="103" />
+          <folding>
+            <marker date="1495026894000" expanded="true" signature="841:878" ph="SELECT DISTI... news" />
+            <marker date="1495026894000" expanded="true" signature="841:894" ph="SELECT DISTI... news" />
+            <marker date="1495026894000" expanded="true" signature="1197:1234" ph="SELECT DISTI... news" />
+            <marker date="1495026894000" expanded="true" signature="1197:1240" ph="SELECT DISTI... news" />
+            <marker date="1495026894000" expanded="true" signature="1197:1241" ph="SELECT DISTI... news" />
+            <marker date="1495026894000" expanded="true" signature="1197:1255" ph="SELECT DISTI... news" />
+            <marker date="1495026894000" expanded="true" signature="1605:1697" ph="SELECT * FRO... user" />
+            <marker date="1495026894000" expanded="true" signature="2091:2115" ph="SELECT news_... news" />
+            <marker date="1495026894000" expanded="true" signature="2091:2131" ph="SELECT news_... news" />
+            <marker date="1495026894000" expanded="true" signature="2172:2196" ph="SELECT DISTI... news" />
+            <marker date="1495026894000" expanded="true" signature="2172:2203" ph="SELECT news_... news" />
+            <marker date="1495026894000" expanded="true" signature="2172:2237" ph="SELECT news_... news" />
+            <marker date="1495026894000" expanded="true" signature="2172:2254" ph="SELECT news_... news" />
+            <marker date="1495026894000" expanded="true" signature="2612:2647" ph="SELECT news_... " />
+            <marker date="1495026894000" expanded="true" signature="2612:2687" ph="SELECT news_... " />
+            <marker date="1495026894000" expanded="true" signature="2745:2861" ph="SELECT news_... news" />
+            <marker date="1495026894000" expanded="true" signature="2745:2870" ph="SELECT news_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/latest.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="51" column="13" lean-forward="false" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/dao/ActivatingDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="50" column="9" lean-forward="true" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+          <folding>
+            <marker date="1495103287000" expanded="true" signature="776:849" ph="SELECT user_... activating" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/dao/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding>
+            <marker date="1495032409000" expanded="true" signature="726:785" ph="select user_... user" />
+            <marker date="1495032409000" expanded="true" signature="1101:1153" ph="select email... user" />
+            <marker date="1495032409000" expanded="true" signature="1512:1605" ph="SELECT user_... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/activate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="65" column="58" lean-forward="false" selection-start-line="65" selection-start-column="58" selection-end-line="65" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/entity/Activation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/activate.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="112" column="9" lean-forward="false" selection-start-line="112" selection-start-column="9" selection-end-line="112" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="32" column="32" lean-forward="false" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
           <folding />
         </state>
       </provider>

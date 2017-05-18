@@ -151,13 +151,13 @@
 </div>
 <!-- /#wrapper -->
 
-<script src="script/jquery.min.js" type="text/javascript"></script>
-<script>window.jQuery || document.write('<script src="script/jquery.min.js"><\/script>')</script>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
 
-<script src="script/bootstrapvalidator.min.js" type="text/javascript"></script>
+<script src="js/bootstrapvalidator.min.js" type="text/javascript"></script>
 
-<script src='script/bootstrap.min.js'></script>
-<script src="script/user.js" type="text/javascript"></script>
+<script src='js/bootstrap.min.js'></script>
+<script src="js/user.js" type="text/javascript"></script>
 <script type="text/javascript">
     $(document).ready(function () {
         var trigger = $('.hamburger'),

@@ -24,7 +24,7 @@ public class ActivatingDAO {
         } catch (HibernateException e) {
             session = sessionFactory.openSession();
         }
-        List list = session.createSQLQuery("SELECT user_id FROM activating WHERE user_id = '" + username + "'").list();
+        List list = session.createSQLQuery("SELECT activation_code FROM activating WHERE user_id = '" + username + "'").list();
         if (list.isEmpty())
             return null;
         else return list.get(0).toString();
@@ -40,6 +40,23 @@ public class ActivatingDAO {
         Transaction transaction = session.beginTransaction();
         session.save(activation);
         transaction.commit();
+    }
+
+    public void deleteActivation(String username) {
+        Session session;
+        try {
+            session = sessionFactory.getCurrentSession();
+        } catch (HibernateException e) {
+            session = sessionFactory.openSession();
+        }
+        try {
+            Transaction transaction = session.beginTransaction();
+            Activation activation = (Activation) session.get(Activation.class, username);
+            session.delete(activation);
+            transaction.commit();
+        } catch (Exception e) {
+            return;
+        }
     }
 
 

@@ -286,12 +286,13 @@ body p,
 body blockquote {
   color: #222222;
 }
-body a {
-  color: #222222;
-  text-decoration: underline;
+body > a {
+  color: #616161;
+  text-decoration: solid;
 }
-body a:hover {
-  color: #ffffff;
+body > a:hover {
+  color: #000000;
+  text-decoration: solid;
 }
 
 .panel-login {

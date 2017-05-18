@@ -9,7 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>新新新闻网-新闻栏目</title>
+    <title>新新新闻网-${columnName}</title>
     <meta charset="UTF-8">
     <link rel='stylesheet' href='../css/bootstrap.min.css'>
     <link rel="stylesheet" href="../css/style.css">
@@ -58,46 +58,57 @@
             <span class="hamb-bottom"></span>
         </button>
         <div class="container">
+            <table width="100%">
+                <tr width="100%">
+                    <td>
+                        <h4>${columnName}</h4>
+                    </td>
+                    <td width="80%" align="right">
+                        <button class="btn btn-sm ${isFollowed?"btn-danger":"btn-success"}" onclick="location=('/user')" >
+                            <span class="glyphicon ${isFollowed?"glyphicon-minus":"glyphicon-plus"}"></span>
+                            ${isFollowed?"取消关注":"加入关注"}
+                        </button>
+                    </td>
+                </tr>
+            </table>
             <table class="table">
                 <thead>
                 <tr>
                     <th width="10%">#</th>
-                    <th width="40%">栏目</th>
-                    <th width="50%">加入/取消关注</th>
+                    <th width="60%">新闻标题</th>
+                    <th width="30%">发布时间
+                    </th>
                 </tr>
                 </thead>
                 <tbody>
-                <c:forEach items ="${requestScope.list}" var= "column" varStatus="status">
+                <c:forEach items ="${requestScope.list}" var= "news" varStatus="status">
                     <tr>
                         <td width="10%">${start + status.index + 1}</td>
-                        <td width="70%">
-                            <a href="/${column["columnLabel"]}"
+                        <td width="60%">
+                            <a href="/news/${news["newsID"]}"
                                onmouseover="this.style.cssText='color:#000000'"
                                style="color: #616161;">
-                                    ${column["columnName"]}
+                                    ${news["newsTitle"]}
                             </a>
                         </td>
-                        <td width="20%">
-                            <button class="btn btn-sm ${column["isFollowed"]?"btn-danger":"btn-success"}" onclick="location=('/user')">
-                                <span class="glyphicon ${column["isFollowed"]?"glyphicon-minus":"glyphicon-plus"}"></span>
-                                    ${column["isFollowed"]?"取消关注":"加入关注"}
-                            </button>
-                        </td>>
+                        <td width="30%">
+                                ${news["newsTime"]}
+                        </td>
                     </tr>
                 </c:forEach >
                 </tbody>
             </table>
             <nav style="text-align: center">
                 <ul class="pagination">
-                    <li class=${page==1?"disabled":""}><a href="/column/${page-1}" aria-label="Previous">&laquo;</a></li>
+                    <li class=${page==1?"disabled":""}><a href="/${columnLabel}/${page-1}" aria-label="Previous">&laquo;</a></li>
                     <c:forEach var="i" begin="${page-2 < 1? 1 : page-2}" end="${page+2 > totalPage ? totalPage : page+2}" varStatus="status">
                         <li>
-                            <a href="/column/${page-2 < 1? status.index: page-3 + status.index}">
+                            <a href="/${columnLabel}/${page-2 < 1? status.index: page-3 + status.index}">
                                     ${page-2 < 1? status.index: page-3 + status.index}
                             </a>
                         </li>
                     </c:forEach >
-                    <li class=${page==totalPage?"disabled":""}><a href="/column/${page+1}" aria-label="Next">&raquo;</a></li>
+                    <li class=${page==totalPage?"disabled":""}><a href="/${columnLabel}/${page+1}" aria-label="Next">&raquo;</a></li>
                 </ul>
             </nav>
         </div>

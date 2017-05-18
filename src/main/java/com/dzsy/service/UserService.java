@@ -138,6 +138,9 @@ public class UserService {
         }
     }
 
+    public void deleteActivation(String username) {
+        activatingDao.deleteActivation(username);
+    }
 
     public UserDAO getUserDao() {
         return userDao;

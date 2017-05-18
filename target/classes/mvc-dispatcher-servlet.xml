@@ -33,7 +33,7 @@
     <!-- 开启注解 由于我们利用注解方法来进行相关定义，可以省去很多的配置-->
     <mvc:annotation-driven/>
 
-    <mvc:resources location="/script/" mapping="/script/**"></mvc:resources>
+    <mvc:resources location="/js/" mapping="/script/**"></mvc:resources>
     <mvc:resources location="/fonts/" mapping="/fonts/**"></mvc:resources>
     <mvc:resources location="/css/" mapping="/css/**"></mvc:resources>
 

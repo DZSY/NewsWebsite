@@ -78,6 +78,8 @@ public class UserController {
             return "wrong activation code";
         else {
             httpSession.setAttribute("activated", true);
+            //删除
+            service.deleteActivation(httpSession.getAttribute("username").toString());
             return "success";
         }
     }

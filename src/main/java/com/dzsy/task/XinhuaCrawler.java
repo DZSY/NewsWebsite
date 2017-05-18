@@ -186,6 +186,7 @@ public class XinhuaCrawler implements Crawler{
                                 !linkAddress.contains("arabic") &&
                                 !linkAddress.contains("uyghur") &&
                                 !linkAddress.contains("xizang") &&
+                                !linkAddress.contains("big5") &&
                                 (linkAddress.contains("news.xinhuanet.com") || linkAddress.contains("news.cn"))) {
                             list.add(link.attr("abs:href"));
                         }

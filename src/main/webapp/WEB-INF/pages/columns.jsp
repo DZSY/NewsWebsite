@@ -70,14 +70,14 @@
                 <c:forEach items ="${requestScope.list}" var= "column" varStatus="status">
                     <tr>
                         <td width="10%">${start + status.index + 1}</td>
-                        <td width="40%">
+                        <td width="70%">
                             <a href="/${column["columnLabel"]}"
                                onmouseover="this.style.cssText='color:#000000'"
                                style="color: #616161;">
                                     ${column["columnName"]}
                             </a>
                         </td>
-                        <td width="50%">
+                        <td width="20%">
                             <button class="btn btn-sm ${column["isFollowed"]?"btn-danger":"btn-success"}" onclick="location=('/user')">
                                 <span class="glyphicon ${column["isFollowed"]?"glyphicon-minus":"glyphicon-plus"}"></span>
                                     ${column["isFollowed"]?"取消关注":"加入关注"}
@@ -104,8 +104,8 @@
     </div>
 </div>
 </body>
-<script src="../script/jquery.min.js" type="text/javascript"></script>
-<script src='../script/bootstrap.min.js'></script>
+<script src="../js/jquery.min.js" type="text/javascript"></script>
+<script src='../js/bootstrap.min.js'></script>
 <script type="text/javascript">
     $(document).ready(function () {
         var trigger = $('.hamburger'),
