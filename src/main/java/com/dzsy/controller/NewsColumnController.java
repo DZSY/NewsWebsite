@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
-import javax.jws.WebParam;
 import javax.servlet.http.HttpSession;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
@@ -127,7 +126,7 @@ public class NewsColumnController {
     }
 
     @RequestMapping(value="/latest",method = RequestMethod.GET)
-    public ModelAndView getLatest() {
+    public ModelAndView getLatest0() {
         return new ModelAndView("redirect:/latest/1");
     }
 
@@ -182,9 +181,60 @@ public class NewsColumnController {
         return modelAndView;
     }
 
+    @RequestMapping(value="/searchTitle/{page}", method = {RequestMethod.POST})
+    public ModelAndView doSearchTitlePage(String searchItem, @PathVariable(value="page") Integer page, HttpSession httpSession){
+
+        int totalPage = (service.getSearchTitleTotalCount(searchItem) - 1) / newsPageCount  + 1;
+        if (page < 1 || page > totalPage)
+            return new ModelAndView("redirect:/error");
+        List<Object[]> newsList = service.getSearchTitleNewsPage(searchItem,(page-1) * newsPageCount, newsPageCount);
+        List<NewsSkeleton> list = new LinkedList<>();
+        for (Object[] object : newsList) {
+            list.add(new NewsSkeleton((Integer)object[0], (String)object[1], simpleDateFormat.format((Timestamp)object[2])));
+        }
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.addObject("list", list);
+        modelAndView.addObject("count", newsPageCount);
+        modelAndView.addObject("start", (page-1) * newsPageCount);
+        modelAndView.addObject("page", page);
+        modelAndView.addObject("totalPage", totalPage);
+        modelAndView.addObject("searchItem", searchItem);
+
+        if (httpSession.getAttribute("activated") != null) {
+            modelAndView.setViewName("search_title_result_online");
+        }
+        modelAndView.setViewName("search_title_result");
+        return modelAndView;
+    }
+
+    @RequestMapping(value="/searchBody/{page}", method = {RequestMethod.POST})
+    public ModelAndView doSearchBodyPage(String searchItem, @PathVariable(value="page") Integer page, HttpSession httpSession){
+
+        int totalPage = (service.getSearchBodyTotalCount(searchItem) - 1) / newsPageCount  + 1;
+        if (page < 1 || page > totalPage)
+            return new ModelAndView("redirect:/error");
+        List<Object[]> newsList = service.getSearchBodyNewsPage(searchItem,(page-1) * newsPageCount, newsPageCount);
+        List<NewsSkeleton> list = new LinkedList<>();
+        for (Object[] object : newsList) {
+            list.add(new NewsSkeleton((Integer)object[0], (String)object[1], simpleDateFormat.format((Timestamp)object[2])));
+        }
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.addObject("list", list);
+        modelAndView.addObject("count", newsPageCount);
+        modelAndView.addObject("start", (page-1) * newsPageCount);
+        modelAndView.addObject("page", page);
+        modelAndView.addObject("totalPage", totalPage);
+        modelAndView.addObject("searchItem", searchItem);
+
+        if (httpSession.getAttribute("activated") != null) {
+            modelAndView.setViewName("search_body_result_online");
+        }
+        modelAndView.setViewName("search_body_result");
+        return modelAndView;
+    }
 
     @RequestMapping(value="/{columnLabel}",method = RequestMethod.GET)
-    public ModelAndView goColumn(@PathVariable(value="columnLabel") String columnLabel, HttpSession httpSession) {
+    public ModelAndView goColumn0(@PathVariable(value="columnLabel") String columnLabel, HttpSession httpSession) {
         return new ModelAndView("redirect:/{columnLabel}/1");
     }
 
@@ -225,6 +275,7 @@ public class NewsColumnController {
         modelAndView.setViewName("singlecolumn");
         return modelAndView;
     }
+
 
 }
 

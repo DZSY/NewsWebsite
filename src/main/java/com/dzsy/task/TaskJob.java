@@ -4,6 +4,7 @@ package com.dzsy.task;
  * Created by positif on 03/05/2017.
  */
 
+import org.apdplat.word.WordSegmenter;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
@@ -23,6 +24,7 @@ public class TaskJob {
         crawlerDB = new CrawlerDB();
         crawlers = new LinkedList<>();
         crawlers.add(new XinhuaCrawler(crawlerDB));
+        WordSegmenter.seg("初始化");
     }
     //每10分钟爬一次，每个新闻门户网站爬5分钟
     @Scheduled(fixedRate = 600000)

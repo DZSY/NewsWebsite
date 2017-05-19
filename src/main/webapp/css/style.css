@@ -1,11 +1,16 @@
-@import "flat-ui.min.css";
-@import "animate.min.css";
+@import "/css/flat-ui.min.css";
+@import "/css/animate.min.css";
 /*-------------------------------*/
 /*           VARIABLES           */
 /*-------------------------------*/
 body {
   position: relative;
   overflow-x: hidden;
+}
+body,
+html {
+  height: 100%;
+  background-color: #ffffff;
 }
 .nav .open > a {
   background-color: transparent;
@@ -27,23 +32,23 @@ body {
   transition: all 0.5s ease;
 }
 #wrapper.toggled {
-  padding-left: 200px;
+  padding-left: 220px;
 }
 #wrapper.toggled #sidebar-wrapper {
-  width: 200px;
+  width: 220px;
 }
 #wrapper.toggled #page-content-wrapper {
-  margin-right: -200px;
+  margin-right: -220px;
   position: absolute;
 }
 #sidebar-wrapper {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
-  background: #ffffff;
+  background: #222222;;
   height: 100%;
-  left: 200px;
-  margin-left: -200px;
+  left: 220px;
+  margin-left: -220px;
   overflow-x: hidden;
   overflow-y: auto;
   transition: all 0.5s ease;
@@ -66,7 +71,7 @@ body {
   padding: 0;
   position: absolute;
   top: 0;
-  width: 200px;
+  width: 220px;
 }
 .sidebar-nav li {
   display: inline-block;
@@ -75,7 +80,7 @@ body {
   width: 100%;
 }
 .sidebar-nav li:before {
-  background-color: #ffffff;
+  background-color: #222222;
   content: '';
   height: 100%;
   left: 0;
@@ -83,30 +88,30 @@ body {
   top: 0;
   -webkit-transition: width 0.2s ease-in;
   transition: width 0.2s ease-in;
-  width: 9px;
+  width: 3px;
   z-index: -1;
 }
 .sidebar-nav li:first-child a {
-  background-color: #ffffff;
-  color: #7a7a7a;
+  background-color: #222222;
+  color: #ffffff;
 }
 .sidebar-nav li:nth-child(2):before {
-  background-color: #ff644d;
+  background-color: #402d5c;
 }
 .sidebar-nav li:nth-child(3):before {
-  background-color: #ffa34d;
+  background-color: #4c366d;
 }
 .sidebar-nav li:nth-child(4):before {
-  background-color: #fff700;
+  background-color: #583e7e;
 }
 .sidebar-nav li:nth-child(5):before {
-  background-color: #64d051;
+  background-color: #64468f;
 }
 .sidebar-nav li:nth-child(6):before {
-  background-color: #51cbd0;
+  background-color: #704fa0;
 }
 .sidebar-nav li:nth-child(7):before {
-  background-color: #1e9cff;
+  background-color: #7c5aae;
 }
 .sidebar-nav li:nth-child(8):before {
   background-color: #8a6cb6;
@@ -120,7 +125,7 @@ body {
   width: 100%;
 }
 .sidebar-nav li a {
-  color: #7a7a7a;
+  color: #ffffff;
   display: block;
   padding: 10px 15px 10px 30px;
   text-decoration: none;
@@ -130,6 +135,16 @@ body {
   transition: width 0.2s ease-in;
   width: 100%;
 }
+.sidebar-nav .dropdown-menu {
+  background-color: #222222;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
 .sidebar-nav li a:hover,
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus,
@@ -137,11 +152,11 @@ body {
 .sidebar-nav li.open a:active,
 .sidebar-nav li.open a:focus {
   background-color: transparent;
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
 }
 .sidebar-nav > .sidebar-brand {
-  font-size: 16px;
+  font-size: 20px;
   height: 65px;
   line-height: 44px;
 }
@@ -171,7 +186,7 @@ body {
 .hamburger.is-closed:before {
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-transition: all 0.35s ease-in-out;
-  color: #ffffff;
+  color: #B8B8B8;
   content: '';
   display: block;
   font-size: 14px;
@@ -196,17 +211,17 @@ body {
 }
 .hamburger.is-closed .hamb-top {
   -webkit-transition: all 0.35s ease-in-out;
-  background-color: #9d9d9d;
+  background-color: #B8B8B8;
   top: 5px;
 }
 .hamburger.is-closed .hamb-middle {
-  background-color: #9d9d9d;
+  background-color: #B8B8B8;
   margin-top: -2px;
   top: 50%;
 }
 .hamburger.is-closed .hamb-bottom {
   -webkit-transition: all 0.35s ease-in-out;
-  background-color: #9d9d9d;
+  background-color: #B8B8B8;
   bottom: 5px;
 }
 .hamburger.is-closed .hamb-top,
@@ -241,7 +256,7 @@ body {
 .hamburger.is-open:before {
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-transition: all 0.35s ease-in-out;
-  color: #9d9d9d;
+  color: #ffffff;
   content: '';
   display: block;
   font-size: 14px;
@@ -256,9 +271,7 @@ body {
   display: block;
   opacity: 1;
 }
-/*-------------------------------*/
-/*          Dark Overlay         */
-/*-------------------------------*/
+
 .overlay {
   position: fixed;
   display: none;
@@ -271,6 +284,7 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
+
 /* SOME DEMO STYLES - NOT REQUIRED */
 body,
 html {

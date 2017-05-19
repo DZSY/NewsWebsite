@@ -87,15 +87,11 @@
             </table>
             <nav style="text-align: center">
                 <ul class="pagination">
-                    <li class=${page==1?"disabled":""}><a href="/${columnLabel}/${page-1}" aria-label="Previous">&laquo;</a></li>
+                    <li class=${page==1?"disabled":""}><a href="/latest/${page-1}" aria-label="Previous">&laquo;</a></li>
                     <c:forEach var="i" begin="${page-2 < 1? 1 : page-2}" end="${page+2 > totalPage ? totalPage : page+2}" varStatus="status">
-                        <li>
-                            <a href="/${columnLabel}/${page-2 < 1? status.index: page-3 + status.index}">
-                                    ${page-2 < 1? status.index: page-3 + status.index}
-                            </a>
-                        </li>
+                        <li><a href="/latest/${begin + status.index}">${begin + status.index}</a></li>
                     </c:forEach >
-                    <li class=${page==totalPage?"disabled":""}><a href="/${columnLabel}/${page+1}" aria-label="Next">&raquo;</a></li>
+                    <li class=${page==totalPage?"disabled":""}><a href="/latest/${page+1}" aria-label="Next">&raquo;</a></li>
                 </ul>
             </nav>
         </div>

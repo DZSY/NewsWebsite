@@ -59,20 +59,20 @@
         </button>
         <div class="container">
             <div class="row">
-                <div>
-                    <a href="/" onmouseover="this.style.cssText='color:#000000'" style="color: #616161;">新新新闻网</a>
-
-                    <i class="glyphicon glyphicon-chevron-right"></i>
-
-                    <a href="/${columnLabel}" onmouseover="this.style.cssText='color:#000000'" style="color: #616161;">${newsColumn}</a>
-                </div>
-                <h3>${title}</h3>
-                <blockquote>
-                    ${time}
-                    <a href="${url}" onmouseover="this.style.cssText='color:#000000'" style="color: #616161;" >${source}</a>
-                </blockquote>
-                <div>
-                    ${body}
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div>
+                        <a href="/">新新新闻网</a>
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <a href="/${columnLabel}">${newsColumn}</a>
+                    </div>
+                    <h3>${title}</h3>
+                    <blockquote>
+                        ${time}
+                        <a href="${url}">${source}</a>
+                    </blockquote>
+                    <div>
+                        ${body}
+                    </div>
                 </div>
             </div>
         </div>

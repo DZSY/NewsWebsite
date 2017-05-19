@@ -91,11 +91,7 @@
                 <ul class="pagination">
                     <li class=${page==1?"disabled":""}><a href="/column/${page-1}" aria-label="Previous">&laquo;</a></li>
                     <c:forEach var="i" begin="${page-2 < 1? 1 : page-2}" end="${page+2 > totalPage ? totalPage : page+2}" varStatus="status">
-                        <li>
-                            <a href="/column/${page-2 < 1? status.index: page-3 + status.index}">
-                                    ${page-2 < 1? status.index: page-3 + status.index}
-                            </a>
-                        </li>
+                        <li><a href="/column/${begin + status.index}">${begin + status.index}</a></li>
                     </c:forEach >
                     <li class=${page==totalPage?"disabled":""}><a href="/column/${page+1}" aria-label="Next">&raquo;</a></li>
                 </ul>

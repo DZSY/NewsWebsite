@@ -2,10 +2,13 @@ package com.dzsy.dao;
 
 import com.dzsy.entity.News;
 import com.sun.org.apache.bcel.internal.generic.NEW;
+import org.apdplat.word.segmentation.Word;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.apdplat.word.*;
 
+import java.math.BigInteger;
 import java.util.List;
 
 /**
@@ -22,71 +25,99 @@ public class NewsColumnDAO {
         return sessionFactory;
     }
 
-    public int getColumnsTotalCount() {
+    private Session getSession() {
         Session session;
         try {
             session = sessionFactory.getCurrentSession();
         } catch (HibernateException e) {
             session = sessionFactory.openSession();
         }
-        return session.createSQLQuery("SELECT DISTINCT news_column from news").list().size();
+        return session;
+    }
+
+    public int getColumnsTotalCount() {
+        Object object = getSession().createSQLQuery("SELECT COUNT(DISTINCT news_column) from news").list().get(0);
+        return ((BigInteger)object).intValue();
     }
 
     public List getColumnsPage(int begin, int count) {
-        Session session;
-        try {
-            session = sessionFactory.getCurrentSession();
-        } catch (HibernateException e) {
-            session = sessionFactory.openSession();
-        }
-        return session.createSQLQuery("SELECT DISTINCT news_column from news LIMIT " + begin + "," + count).list();
+        return getSession().createSQLQuery("SELECT DISTINCT news_column from news LIMIT " + begin + "," + count).list();
     }
 
     public boolean isFollowd(String username, String newsColumn) {
-        Session session;
-        try {
-            session = sessionFactory.getCurrentSession();
-        } catch (HibernateException e) {
-            session = sessionFactory.openSession();
-        }
-        return !session.createSQLQuery(
+        return !getSession().createSQLQuery(
                 "SELECT * FROM user WHERE user_id = '" + username + "' AND news_column = '" + newsColumn + "'")
                 .list()
                 .isEmpty();
     }
 
     public int getNewsTotalCount(String newsColumn) {
-        Session session;
-        try {
-            session = sessionFactory.getCurrentSession();
-        } catch (HibernateException e) {
-            session = sessionFactory.openSession();
+        if ("".equals(newsColumn)) {
+            Object object = getSession().createSQLQuery("SELECT COUNT(news_id) from news").list().get(0);
+            return ((BigInteger)object).intValue();
         }
-        if ("".equals(newsColumn))
-            return session.createSQLQuery("SELECT news_id from news").list().size();
-        return session.createSQLQuery("SELECT news_id from news WHERE news_column = '" + newsColumn + "'" ).list().size();
+        Object object = getSession().createSQLQuery("SELECT COUNT(news_id) from news WHERE news_column = '" + newsColumn + "'").list().get(0);
+        return ((BigInteger)object).intValue();
     }
 
     public List getNewsPage(String newsColumn, int begin, int count) {
-        Session session;
-        try {
-            session = sessionFactory.getCurrentSession();
-        } catch (HibernateException e) {
-            session = sessionFactory.openSession();
-        }
         if ("".equals(newsColumn))
-            return session.createSQLQuery("SELECT news_id,title,time from news ORDER BY time DESC LIMIT " + begin + "," + count).list();
-        return session.createSQLQuery("SELECT news_id,title,time from news WHERE news_column = '" + newsColumn + "' ORDER BY time DESC LIMIT " + begin + "," + count).list();
+            return getSession().createSQLQuery("SELECT news_id,title,time from news ORDER BY time DESC LIMIT " + begin + "," + count).list();
+        return getSession().createSQLQuery("SELECT news_id,title,time from news WHERE news_column = '" + newsColumn + "' ORDER BY time DESC LIMIT " + begin + "," + count).list();
     }
 
     public News getNewsInfo(Integer ID) {
-        Session session;
-        try {
-            session = sessionFactory.getCurrentSession();
-        } catch (HibernateException e) {
-            session = sessionFactory.openSession();
-        }
-
-        return (News) session.load(News.class, ID);
+        return (News) getSession().load(News.class, ID);
     }
+
+    public String getItems(String item) {
+        //移除停用词
+        List<Word> words = WordSegmenter.seg(item);
+        StringBuffer items = new StringBuffer("*");
+        for (Word word : words) {
+            items.append(word.getText() + "*");
+        }
+        return items.toString();
+    }
+
+
+
+    public int getSearchTitleTotalCount(String item) {
+        Object object = getSession().createSQLQuery("" +
+                "SELECT COUNT(news_id) from news " +
+                "WHERE MATCH(`title`) AGAINST('" +
+                getItems(item) +
+                "' IN BOOLEAN MODE);" ).list().get(0);
+        return ((BigInteger)object).intValue();
+
+    }
+
+    public List getSearchTitleNewsPage(String item, int begin, int count) {
+        return getSession().createSQLQuery(
+                "SELECT news_id,title,time from news " +
+                        "WHERE MATCH(`title`) AGAINST('" +
+                        getItems(item) +
+                        "' IN BOOLEAN MODE)" +
+                        "ORDER BY time DESC LIMIT " + begin + "," + count + ";").list();
+    }
+
+    public int getSearchBodyTotalCount(String item) {
+        Object object = getSession().createSQLQuery("" +
+                "SELECT COUNT(news_id) from news " +
+                "WHERE MATCH(`body`) AGAINST('" +
+                getItems(item) +
+                "' IN BOOLEAN MODE);" ).list().get(0);
+        return ((BigInteger)object).intValue();
+
+    }
+
+    public List getSearchBodyNewsPage(String item, int begin, int count) {
+        return getSession().createSQLQuery(
+                "SELECT news_id,title,time from news " +
+                        "WHERE MATCH(`body`) AGAINST('" +
+                        getItems(item) +
+                        "' IN BOOLEAN MODE)" +
+                        "ORDER BY time DESC LIMIT " + begin + "," + count + ";").list();
+    }
+
 }
