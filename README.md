@@ -392,3 +392,4 @@ FULLTEXT (title,body) WITH PARSER ngram
 3. `./mysqld_safe --ft_min_word_len=1 &`
 4. 上一步可能会遇到`mysqld_safe A mysqld process already exists`的问题，我的方法是直接找到mysqld进程kill掉，动作要快，kill成功之后马上运行这条命令，否则这个进程很快又会启动
 5. `mysql.server start` (先把前一个mysqld进程kill掉)
+6. `SELECT title FROM `news` WHERE MATCH(`title`) AGAINST('*加多宝*' IN BOOLEAN MODE);`不加`*`和`IN BOOLEAN MODE`会搜索不到内容
