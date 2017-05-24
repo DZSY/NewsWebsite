@@ -12,9 +12,7 @@ import java.sql.Timestamp;
  */
 public class NewsSkeleton {
     public Integer newsID;
-
     public String newsTitle;
-
     public String newsTime;
 
 

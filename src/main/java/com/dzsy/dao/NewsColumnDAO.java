@@ -1,5 +1,8 @@
 package com.dzsy.dao;
 
+import com.dzsy.entity.Activation;
+import com.dzsy.entity.FollowColumn;
+import com.dzsy.entity.FollowColumnPrimaryKey;
 import com.dzsy.entity.News;
 import com.sun.org.apache.bcel.internal.generic.NEW;
 import org.apdplat.word.segmentation.Word;
@@ -7,6 +10,7 @@ import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.apdplat.word.*;
+import org.hibernate.Transaction;
 
 import java.math.BigInteger;
 import java.util.List;
@@ -44,13 +48,6 @@ public class NewsColumnDAO {
         return getSession().createSQLQuery("SELECT DISTINCT news_column from news LIMIT " + begin + "," + count).list();
     }
 
-    public boolean isFollowd(String username, String newsColumn) {
-        return !getSession().createSQLQuery(
-                "SELECT * FROM user WHERE user_id = '" + username + "' AND news_column = '" + newsColumn + "'")
-                .list()
-                .isEmpty();
-    }
-
     public int getNewsTotalCount(String newsColumn) {
         if ("".equals(newsColumn)) {
             Object object = getSession().createSQLQuery("SELECT COUNT(news_id) from news").list().get(0);
@@ -80,8 +77,6 @@ public class NewsColumnDAO {
         return items.toString();
     }
 
-
-
     public int getSearchTitleTotalCount(String item) {
         Object object = getSession().createSQLQuery("" +
                 "SELECT COUNT(news_id) from news " +
@@ -108,7 +103,6 @@ public class NewsColumnDAO {
                 getItems(item) +
                 "' IN BOOLEAN MODE);" ).list().get(0);
         return ((BigInteger)object).intValue();
-
     }
 
     public List getSearchBodyNewsPage(String item, int begin, int count) {
@@ -119,5 +113,6 @@ public class NewsColumnDAO {
                         "' IN BOOLEAN MODE)" +
                         "ORDER BY time DESC LIMIT " + begin + "," + count + ";").list();
     }
+
 
 }

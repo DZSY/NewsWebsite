@@ -21,10 +21,6 @@ public class NewsColumnService {
         return newsColumnDao.getColumnsPage(begin, count);
     }
 
-    public boolean isFollowd(String username, String newsColumn) {
-        return newsColumnDao.isFollowd(username, newsColumn);
-    }
-
     public int getNewsTotalCount(String newsColumn) { return newsColumnDao.getNewsTotalCount(newsColumn); }
 
     public List getNewsPage(String newsColumn, int begin, int count) {

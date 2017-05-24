@@ -58,7 +58,7 @@
             <span class="hamb-bottom"></span>
         </button>
         <div class="container">
-            🙄简历投了吗
+            丰富的内容
         </div>
     </div>
     <!-- /#page-content-wrapper -->

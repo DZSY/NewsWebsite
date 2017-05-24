@@ -26,10 +26,8 @@
     <context:component-scan base-package="com.dzsy.task" />
     <!--配置开启任务 如果任务较多可配置添加线程池-->
     <task:annotation-driven />
-
     <!-- 静态资源(js、image等)的访问 -->
     <mvc:default-servlet-handler/>
-
     <!-- 开启注解 由于我们利用注解方法来进行相关定义，可以省去很多的配置-->
     <mvc:annotation-driven/>
 
@@ -61,6 +59,20 @@
     </bean>
     <bean id="newsColumnService" class="com.dzsy.service.NewsColumnService">
         <property name="newsColumnDao" ref="newsColumnDAO"></property>
+    </bean>
+
+    <bean id="followDAO" class="com.dzsy.dao.FollowDAO">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    <bean id="followService" class="com.dzsy.service.FollowService">
+        <property name="followDao" ref="followDAO"></property>
+    </bean>
+
+    <bean id="browseDAO" class="com.dzsy.dao.BrowseDAO">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    <bean id="browseService" class="com.dzsy.service.BrowseService">
+        <property name="browseDao" ref="browseDAO"></property>
     </bean>
 
 </beans>

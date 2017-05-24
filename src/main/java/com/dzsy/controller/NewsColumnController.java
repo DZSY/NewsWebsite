@@ -3,11 +3,11 @@ package com.dzsy.controller;
 import com.dzsy.entity.News;
 import com.dzsy.entity.NewsColumn;
 import com.dzsy.entity.NewsSkeleton;
+import com.dzsy.service.BrowseService;
+import com.dzsy.service.FollowService;
 import com.dzsy.service.NewsColumnService;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
@@ -24,7 +24,13 @@ import java.util.Map;
 public class NewsColumnController {
 
     @Resource(name="newsColumnService")
-    private NewsColumnService service;
+    private NewsColumnService newsColumnService;
+
+    @Resource(name="followService")
+    private FollowService followService;
+
+    @Resource(name="browseService")
+    private BrowseService browseService;
 
     private static final int columnsPageCount = 9;
     private static final int newsPageCount = 12;
@@ -97,10 +103,10 @@ public class NewsColumnController {
     @RequestMapping(value="/column/{page}", method = {RequestMethod.GET})
     public ModelAndView goColumnsPage(@PathVariable(value="page") Integer page, HttpSession httpSession){
 
-        int totalPage = (service.getColumnsTotalCount() - 1) / columnsPageCount + 1;
+        int totalPage = (newsColumnService.getColumnsTotalCount() - 1) / columnsPageCount + 1;
         if (page < 1 || page > totalPage)
             return new ModelAndView("redirect:/error");
-        List columnsList = service.getColumnsPage((page-1) * columnsPageCount, columnsPageCount);
+        List columnsList = newsColumnService.getColumnsPage((page-1) * columnsPageCount, columnsPageCount);
         List<NewsColumn> list = new LinkedList<>();
 
         ModelAndView modelAndView = new ModelAndView();
@@ -108,7 +114,7 @@ public class NewsColumnController {
             modelAndView.setViewName("columns_online");
             String username = httpSession.getAttribute("username").toString();
             for (Object column : columnsList)
-                list.add(new NewsColumn(column.toString(), service.isFollowd(username, column.toString()), mapNameLabel.get(column.toString())));
+                list.add(new NewsColumn(column.toString(), followService.isFollowd(username, column.toString()), mapNameLabel.get(column.toString())));
         }
         else {
             modelAndView.setViewName("columns");
@@ -133,10 +139,10 @@ public class NewsColumnController {
     @RequestMapping(value="/latest/{page}", method = {RequestMethod.GET})
     public ModelAndView getLatestPage(@PathVariable(value="page") Integer page, HttpSession httpSession){
 
-        int totalPage = (service.getNewsTotalCount("") - 1) / newsPageCount  + 1;
+        int totalPage = (newsColumnService.getNewsTotalCount("") - 1) / newsPageCount  + 1;
         if (page < 1 || page > totalPage)
             return new ModelAndView("redirect:/error");
-        List<Object[]> newsList = service.getNewsPage("",(page-1) * newsPageCount, newsPageCount);
+        List<Object[]> newsList = newsColumnService.getNewsPage("",(page-1) * newsPageCount, newsPageCount);
         List<NewsSkeleton> list = new LinkedList<>();
         for (Object[] object : newsList) {
             list.add(new NewsSkeleton((Integer)object[0], (String)object[1], simpleDateFormat.format((Timestamp)object[2])));
@@ -158,7 +164,7 @@ public class NewsColumnController {
     @RequestMapping(value="/news/{news_id}",method = RequestMethod.GET)
     public ModelAndView showNews(@PathVariable(value="news_id") Integer ID, HttpSession httpSession) {
         ModelAndView modelAndView = new ModelAndView();
-        News news = service.getNewsInfo(ID);
+        News news = newsColumnService.getNewsInfo(ID);
         if (news == null)
             return new ModelAndView("redirect:/error");
         modelAndView.addObject("id", news.getNewsID());
@@ -173,8 +179,7 @@ public class NewsColumnController {
         if (httpSession.getAttribute("activated") != null) {
             if (httpSession.getAttribute("username") == null)
                 return new ModelAndView("redirect:/error");
-            //to do : add into the visited record
-
+            browseService.BrowseNews(httpSession.getAttribute("username").toString(), ID);
             modelAndView.setViewName("news_online");
         }
         modelAndView.setViewName("news");
@@ -184,10 +189,10 @@ public class NewsColumnController {
     @RequestMapping(value="/searchTitle/{page}", method = {RequestMethod.POST})
     public ModelAndView doSearchTitlePage(String searchItem, @PathVariable(value="page") Integer page, HttpSession httpSession){
 
-        int totalPage = (service.getSearchTitleTotalCount(searchItem) - 1) / newsPageCount  + 1;
+        int totalPage = (newsColumnService.getSearchTitleTotalCount(searchItem) - 1) / newsPageCount  + 1;
         if (page < 1 || page > totalPage)
             return new ModelAndView("redirect:/error");
-        List<Object[]> newsList = service.getSearchTitleNewsPage(searchItem,(page-1) * newsPageCount, newsPageCount);
+        List<Object[]> newsList = newsColumnService.getSearchTitleNewsPage(searchItem,(page-1) * newsPageCount, newsPageCount);
         List<NewsSkeleton> list = new LinkedList<>();
         for (Object[] object : newsList) {
             list.add(new NewsSkeleton((Integer)object[0], (String)object[1], simpleDateFormat.format((Timestamp)object[2])));
@@ -210,10 +215,10 @@ public class NewsColumnController {
     @RequestMapping(value="/searchBody/{page}", method = {RequestMethod.POST})
     public ModelAndView doSearchBodyPage(String searchItem, @PathVariable(value="page") Integer page, HttpSession httpSession){
 
-        int totalPage = (service.getSearchBodyTotalCount(searchItem) - 1) / newsPageCount  + 1;
+        int totalPage = (newsColumnService.getSearchBodyTotalCount(searchItem) - 1) / newsPageCount  + 1;
         if (page < 1 || page > totalPage)
             return new ModelAndView("redirect:/error");
-        List<Object[]> newsList = service.getSearchBodyNewsPage(searchItem,(page-1) * newsPageCount, newsPageCount);
+        List<Object[]> newsList = newsColumnService.getSearchBodyNewsPage(searchItem,(page-1) * newsPageCount, newsPageCount);
         List<NewsSkeleton> list = new LinkedList<>();
         for (Object[] object : newsList) {
             list.add(new NewsSkeleton((Integer)object[0], (String)object[1], simpleDateFormat.format((Timestamp)object[2])));
@@ -233,6 +238,64 @@ public class NewsColumnController {
         return modelAndView;
     }
 
+    @RequestMapping(value="/toFollow",method = RequestMethod.POST)
+    public @ResponseBody String Follow(@RequestParam String columnName, HttpSession httpSession) {
+        if (httpSession.getAttribute("activated") == null || httpSession.getAttribute("username") == null)
+            return "no";
+        else {
+            String username = httpSession.getAttribute("username").toString();
+            followService.Follow(username, columnName);
+            if (followService.isFollowd(username, columnName))
+                return "ok";
+            else return "no";
+        }
+    }
+
+    @RequestMapping(value="/unFollow",method = RequestMethod.POST)
+    public @ResponseBody String Unfollow(@RequestParam String columnName, HttpSession httpSession) {
+        if (httpSession.getAttribute("activated") == null || httpSession.getAttribute("username") == null)
+            return "no";
+        else {
+            String username = httpSession.getAttribute("username").toString();
+            followService.Unfollow(username, columnName);
+            if (!followService.isFollowd(username, columnName))
+                return "ok";
+            else return "no";
+        }
+    }
+
+
+    @RequestMapping(value="/follow",method = RequestMethod.GET)
+    public ModelAndView getFollowedColumns() {
+        return new ModelAndView("redirect:/follow/1");
+    }
+
+    @RequestMapping(value="/follow/{page}", method = {RequestMethod.GET})
+    public ModelAndView goFollowedPage(@PathVariable(value="page") Integer page, HttpSession httpSession){
+
+        if (httpSession.getAttribute("activated") == null || httpSession.getAttribute("username") == null)
+            return new ModelAndView("redirect:/error");
+
+        String username = httpSession.getAttribute("username").toString();
+        int totalPage = (followService.getFollowedColumnsTotalCount(username) - 1) / columnsPageCount + 1;
+        if (page < 1 || page > totalPage)
+            return new ModelAndView("redirect:/error");
+        List followedColumnsList = followService.getFollowedColumnsPage(username,(page-1) * columnsPageCount, columnsPageCount);
+        List<NewsColumn> list = new LinkedList<>();
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("followed_columns_online");
+        for (Object column : followedColumnsList)
+            list.add(new NewsColumn(column.toString(), true, mapNameLabel.get(column.toString())));
+        modelAndView.addObject("username", username);
+        modelAndView.addObject("list", list);
+        modelAndView.addObject("count", columnsPageCount);
+        modelAndView.addObject("start", (page-1) * columnsPageCount);
+        modelAndView.addObject("page", page);
+        modelAndView.addObject("totalPage", totalPage);
+
+        return modelAndView;
+    }
+
     @RequestMapping(value="/{columnLabel}",method = RequestMethod.GET)
     public ModelAndView goColumn0(@PathVariable(value="columnLabel") String columnLabel, HttpSession httpSession) {
         return new ModelAndView("redirect:/{columnLabel}/1");
@@ -249,10 +312,10 @@ public class NewsColumnController {
         modelAndView.addObject("columnName", columnName);
         modelAndView.addObject("isFollowd", false);
 
-        int totalPage = (service.getNewsTotalCount(columnName) - 1) / newsPageCount  + 1;
+        int totalPage = (newsColumnService.getNewsTotalCount(columnName) - 1) / newsPageCount  + 1;
         if (page < 1 || page > totalPage)
             return new ModelAndView("redirect:/error");
-        List<Object[]> newsList = service.getNewsPage(columnName,(page-1) * newsPageCount, newsPageCount);
+        List<Object[]> newsList = newsColumnService.getNewsPage(columnName,(page-1) * newsPageCount, newsPageCount);
         List<NewsSkeleton> list = new LinkedList<>();
         for (Object[] object : newsList) {
             list.add(new NewsSkeleton((Integer)object[0], (String)object[1], simpleDateFormat.format((Timestamp)object[2])));
@@ -268,7 +331,7 @@ public class NewsColumnController {
             String username = httpSession.getAttribute("username").toString();
             if (username == null || columnName == null)
                 return new ModelAndView("redirect:/error");
-            modelAndView.addObject("isFollowed", service.isFollowd(username, columnName));
+            modelAndView.addObject("isFollowed", followService.isFollowd(username, columnName));
             modelAndView.setViewName("singlecolumn_online");
             return modelAndView;
         }

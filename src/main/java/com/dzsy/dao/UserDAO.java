@@ -16,34 +16,26 @@ public class UserDAO {
         return sessionFactory;
     }
 
-    public boolean isUserExist(String username) {
+    private Session getSession() {
         Session session;
         try {
             session = sessionFactory.getCurrentSession();
         } catch (HibernateException e) {
             session = sessionFactory.openSession();
         }
-        return !session.createSQLQuery("select user_id from user where user_id = '" + username + "'").list().isEmpty();
+        return session;
+    }
+
+    public boolean isUserExist(String username) {
+        return !getSession().createSQLQuery("select user_id from user where user_id = '" + username + "'").list().isEmpty();
     }
 
     public boolean isEmailExist(String email) {
-        Session session;
-        try {
-            session = sessionFactory.getCurrentSession();
-        } catch (HibernateException e) {
-            session = sessionFactory.openSession();
-        }
-        return !session.createSQLQuery("select email from user where email = '" + email + "'").list().isEmpty();
+        return !getSession().createSQLQuery("select email from user where email = '" + email + "'").list().isEmpty();
     }
 
     public boolean isPasswordMatching(String username, String password) {
-        Session session;
-        try {
-            session = sessionFactory.getCurrentSession();
-        } catch (HibernateException e) {
-            session = sessionFactory.openSession();
-        }
-        return !session.createSQLQuery(
+        return !getSession().createSQLQuery(
                 "SELECT user_id FROM user WHERE user_id = '" + username + "' AND password = '" + password + "'")
                 .list()
                 .isEmpty();
@@ -51,12 +43,7 @@ public class UserDAO {
 
 
     public void addUser(User user) {
-        Session session;
-        try {
-            session = sessionFactory.getCurrentSession();
-        } catch (HibernateException e) {
-            session = sessionFactory.openSession();
-        }
+        Session session = getSession();
         Transaction transaction = session.beginTransaction();
         session.save(user);
         transaction.commit();

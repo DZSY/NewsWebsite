@@ -62,8 +62,8 @@
                 <thead>
                 <tr>
                     <th width="10%">#</th>
-                    <th width="60%">新闻标题</th>
-                    <th width="30%">发布时间
+                    <th width="70%">新闻标题</th>
+                    <th width="20%">发布时间
                     </th>
                 </tr>
                 </thead>
@@ -71,14 +71,14 @@
                 <c:forEach items ="${requestScope.list}" var= "news" varStatus="status">
                     <tr>
                         <td width="10%">${start + status.index + 1}</td>
-                        <td width="60%">
+                        <td width="70%">
                             <a href="/news/${news["newsID"]}"
                                onmouseover="this.style.cssText='color:#000000'"
                                style="color: #616161;">
                                     ${news["newsTitle"]}
                             </a>
                         </td>
-                        <td width="30%">
+                        <td width="20%">
                                 ${news["newsTime"]}
                         </td>
                     </tr>
