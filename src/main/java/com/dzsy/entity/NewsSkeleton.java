@@ -11,9 +11,11 @@ import java.sql.Timestamp;
  * Created by positif on 17/05/2017.
  */
 public class NewsSkeleton {
-    public Integer newsID;
-    public String newsTitle;
-    public String newsTime;
+    private Integer newsID;
+    private String newsTitle;
+    private String newsTime;
+    private int similarity = 0;
+
 
 
     public NewsSkeleton(Integer newsID, String newsTitle, String newsTime) {
@@ -46,4 +48,11 @@ public class NewsSkeleton {
         this.newsTime = newsTime;
     }
 
+    public int getSimilarity() {
+        return similarity;
+    }
+
+    public void setSimilarity(int similarity) {
+        this.similarity = similarity;
+    }
 }

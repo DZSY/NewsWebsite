@@ -47,7 +47,7 @@
                 <a href="#"><i class="glyphicon glyphicon-globe"></i>  最新资讯  </a>
             </li>
             <li>
-                <a href="#"><i class="glyphicon glyphicon-heart"></i>  为您推荐  </a>
+                <a href="/recommend"><i class="glyphicon glyphicon-heart"></i>  为您推荐  </a>
             </li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i>  搜索  <span class="caret"></span></a>

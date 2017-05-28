@@ -25,4 +25,8 @@ public class BrowseService {
     public void BrowseNews(String username, Integer newsID) {
         browseDao.BrowseNews(username, newsID);
     }
+
+    public List Recommend(String username) {
+        return browseDao.Recommend(username);
+    }
 }

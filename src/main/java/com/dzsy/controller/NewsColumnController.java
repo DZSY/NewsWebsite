@@ -296,6 +296,22 @@ public class NewsColumnController {
         return modelAndView;
     }
 
+    @RequestMapping(value="/recommend", method = RequestMethod.GET)
+    public ModelAndView getRecommend(HttpSession httpSession) {
+        if (httpSession.getAttribute("activated") == null || httpSession.getAttribute("username") == null)
+            return new ModelAndView("redirect:/error");
+        String username = httpSession.getAttribute("username").toString();
+        List<NewsColumn> list = browseService.Recommend(username);
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.addObject("username", username);
+        modelAndView.addObject("list", list);
+        modelAndView.setViewName("recommend");
+
+        return modelAndView;
+    }
+
+
+
     @RequestMapping(value="/{columnLabel}",method = RequestMethod.GET)
     public ModelAndView goColumn0(@PathVariable(value="columnLabel") String columnLabel, HttpSession httpSession) {
         return new ModelAndView("redirect:/{columnLabel}/1");

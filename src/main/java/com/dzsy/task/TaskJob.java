@@ -24,7 +24,7 @@ public class TaskJob {
         crawlerDB = new CrawlerDB();
         crawlers = new LinkedList<>();
         crawlers.add(new XinhuaCrawler(crawlerDB));
-        //WordSegmenter.seg("初始化");
+        WordSegmenter.seg("初始化");
     }
     //每10分钟爬一次，每个新闻门户网站爬5分钟
     @Scheduled(fixedRate = 600000)

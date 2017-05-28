@@ -157,7 +157,7 @@ public class XinhuaCrawler implements Crawler{
 
 
                         }
-                        Elements imgs = doc.select("img[src]");
+                        Elements imgs = paragraphs.select("img[src]");
                         for (Element element : imgs) {
                             if (!element.attr("src").trim().startsWith("http://")) {
                                 element.attr("src", URL.substring(0, URL.lastIndexOf('/')) + '/' + element.attr("src").trim());

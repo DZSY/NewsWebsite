@@ -1,10 +1,9 @@
 package com.dzsy.dao;
 
-import com.dzsy.entity.Activation;
-import com.dzsy.entity.FollowColumn;
-import com.dzsy.entity.FollowColumnPrimaryKey;
-import com.dzsy.entity.News;
+import com.dzsy.entity.*;
 import com.sun.org.apache.bcel.internal.generic.NEW;
+import org.apdplat.word.analysis.CosineTextSimilarity;
+import org.apdplat.word.analysis.TextSimilarity;
 import org.apdplat.word.segmentation.Word;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
@@ -13,7 +12,9 @@ import org.apdplat.word.*;
 import org.hibernate.Transaction;
 
 import java.math.BigInteger;
-import java.util.List;
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 /**
  * Created by positif on 15/05/2017.
@@ -106,6 +107,8 @@ public class NewsColumnDAO {
     }
 
     public List getSearchBodyNewsPage(String item, int begin, int count) {
+        WordFrequencyStatistics wordFrequencyStatistics = new WordFrequencyStatistics();
+        wordFrequencyStatistics.merge("test", "w","e");
         return getSession().createSQLQuery(
                 "SELECT news_id,title,time from news " +
                         "WHERE MATCH(`body`) AGAINST('" +
