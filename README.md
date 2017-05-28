@@ -1,20 +1,34 @@
-# 1. 引言 
+---
+typora-root-url: ../Desktop
+
+---
+
+[TOC]
+
+# 1. 引言
 
 当我们想要浏览一些新闻的时候，为保证资讯的真实和权威，往往会选择主流的新闻门户网站，但是这样的门户网站太多了，逐一浏览起来太过麻烦；另一方面，如果单纯选择搜索引擎来搜索想要的新闻，又需要排除来自一些不入流网站的信息。因此设计开发一个新闻聚合网站，能够定时到各主流新闻门户网站(新浪、搜狐、新华网、人民网等)抓取新闻，并展示给用户。
 
-## 1.1. 目的 
+## 1.1. 目的
+
 让用户能够方便地一站浏览来自多个主流新闻门户网站的新闻资讯。使用户注册登录网站后，就能设置自己感兴趣的新闻栏目，并且在首页能够看到这些栏目的入口及相关热点新闻；另外，网站还必须具备一定的学习能力，例如在用户浏览过一些新闻以后能够给用户推荐相关新闻。
 
 最后，本项目还会设计开发一个iOS客户端软件，能够发布和网站一样的新闻资讯，并且推送热点新闻。
 
-## 1.2. 背景 
-本项目是浙江大学B/S体系软件设计课程2017年春夏学期的课程项目
+## 1.2. 背景
+
+本项目是浙江大学B/S体系软件设计课程2017年春夏学期的课程项目，该项目的提出者是该课程任课老师胡晓军，设计开发者是计算机学院学生代昭琦。
+
 网站及对应客户端面向的用户群体是关注时事新闻的用户人群。
 
 ## 1.3. 预期读者
+
 客户、项目经理、软件开发人员、测试人员。
+
 # 2. 总体设计
+
 ## 2.1. 需求规定
+
 ### 2.1.1. 系统功能
 
 网站及对应iOS客户端，都会提供下列界面：
@@ -212,9 +226,7 @@ MySQL5.7，MySQL 是最流行的关系型数据库管理系统之一，其功能
 4. 查看每个栏目入口旁边是否有“取消关注”的按钮；
 5. 点击“取消关注”按钮后，查看页面是否自动刷新，这个新闻栏目是否已经消失。
 
-
-
-## 3.4. 新闻推荐 
+## 3.4. 新闻推荐
 
 ### 3.4.1. 模块描述
 
@@ -287,8 +299,6 @@ MySQL5.7，MySQL 是最流行的关系型数据库管理系统之一，其功能
 1. 测试查询到的最多浏览次数是否正确；
 2. 设置合适的阈值以后，测试是否能在iPhone上收到推送消息。
 
-
-
 # 4. 用户接口
 
 ## 4.1. 系统界面
@@ -327,7 +337,6 @@ MySQL5.7，MySQL 是最流行的关系型数据库管理系统之一，其功能
 
 
 
-
 # 5. 数据库设计
 
 爬取过的网站crawled:
@@ -341,15 +350,15 @@ MySQL5.7，MySQL 是最流行的关系型数据库管理系统之一，其功能
 | 名称          | 类型           | 属性                      | 备注   |
 | ----------- | ------------ | ----------------------- | ---- |
 | news_id     | int          | not null AUTO_INCREMENT | 文章编号 |
-| url         | varchar(100) | not null                | URL  |
 | time        | datetime     | not null                | 时间   |
-| source_name | varchar(20)  | null                    | 来源名称 |
-| source_url  | varchar(100) | unique                  | 来源链接 |
+| url         | varchar(100) | not null                | URL  |
+| source      | varchar(10)  | null                    | 来源名称 |
 | news_column | varchar(4)   | null                    | 新闻栏目 |
 | title       | varchar(50)  | not null                | 标题   |
 | body        | text         | not null                | 正文   |
 
 其中:
+
 ```sql
 FULLTEXT (title,body) WITH PARSER ngram
 ```
@@ -369,7 +378,7 @@ FULLTEXT (title,body) WITH PARSER ngram
 | user_id         | varchar(16) | unique   | 用户id |
 | activation_code | varchar(6)  | not null | 激活码  |
 
-用户感兴趣的新闻栏目表favorite_columns：
+用户感兴趣的新闻栏目表follow_column：
 
 | 名称          | 类型          | 属性       | 备注   |
 | ----------- | ----------- | -------- | ---- |
@@ -378,18 +387,9 @@ FULLTEXT (title,body) WITH PARSER ngram
 
 用户浏览记录表browse_history：
 
-| 名称      | 类型          | 属性       | 备注   |
-| ------- | ----------- | -------- | ---- |
-| user_id | varchar(16) | not null | 用户id |
-| news_id | int         | not null | 新闻id |
-| time    | datetime    | not null | 浏览时间 |
+| 名称      | 类型           | 属性                                    | 备注   |
+| ------- | ------------ | ------------------------------------- | ---- |
+| user_id | varchar(16)  | not null                              | 用户id |
+| news_id | int          | not null                              | 新闻id |
+| time    | timestamp(0) | not null DEFAULT CURRENT_TIMESTAMP(0) | 浏览时间 |
 
-# 遇到的问题
-## MySQL全文索引
-在使用全文索引的过程中，由于MySQL的默认ft_min_word_len是4，不适用于中文索引，所以需要改成1，但是我的MySQL是用Homebrew安装的，网上查到的方法很多都不适用，花了很长时间找到了以下解决办法：
-1. `mysql.server stop`
-2. 用`which mysql`找到mysql快捷方式，再找到运行目录，我的是`/usr/local/Cellar/mysql/5.7.17/bin`
-3. `./mysqld_safe --ft_min_word_len=1 &`
-4. 上一步可能会遇到`mysqld_safe A mysqld process already exists`的问题，我的方法是直接找到mysqld进程kill掉，动作要快，kill成功之后马上运行这条命令，否则这个进程很快又会启动
-5. `mysql.server start` (先把前一个mysqld进程kill掉)
-6. `SELECT title FROM `news` WHERE MATCH(`title`) AGAINST('*加多宝*' IN BOOLEAN MODE);`不加`*`和`IN BOOLEAN MODE`会搜索不到内容
