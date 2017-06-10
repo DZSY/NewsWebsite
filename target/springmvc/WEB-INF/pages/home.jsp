@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>新新新闻网-首页</title>
     <link rel='stylesheet prefetch' href='css/bootstrap.min.css'>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div id="wrapper">
@@ -15,38 +15,6 @@
 
     <!-- Sidebar -->
     <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-        <ul class="nav sidebar-nav">
-            <li class="sidebar-brand">
-                <a href="#">
-                    新新新闻网
-                </a>
-            </li>
-            <li>
-                <a href="#"><i class="glyphicon glyphicon-home"></i>  首页  </a>
-            </li>
-            <li>
-                <a href="/column"><i class="glyphicon glyphicon-th-list"></i>  新闻栏目  </a>
-            </li>
-            <li>
-                <a href="/latest"><i class="glyphicon glyphicon-globe"></i>  最新资讯  </a>
-            </li>
-            <li>
-                <a href="/user"><i class="glyphicon glyphicon-user"></i>  注册/登录  </a>
-            </li>
-            <li>
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i>  搜索  <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                    <form action="" id="searchForm" name="searchForm" method=post>
-                        <input type="text" id="searchItem" name="searchItem" class="form-control" placeholder="请输入关键词" />
-                        <li><a onclick="window.searchForm.action='/searchTitle/1';searchForm.submit()">在标题中搜索</a></li>
-                        <li><a onclick="window.searchForm.action='/searchBody/1';searchForm.submit()">在正文中搜索</a></li>
-                    </form>
-                </ul>
-            </li>
-            <li>
-                <a href="#"><i class="glyphicon glyphicon-phone"></i>  客户端下载  </a>
-            </li>
-        </ul>
     </nav>
     <!-- /#sidebar-wrapper -->
 
@@ -58,10 +26,17 @@
             <span class="hamb-bottom"></span>
         </button>
         <div class="container">
-            丰富的内容
+            <div align="right" style="margin-top:10%; height: 90%; background-image: url(/images/home.jpg); background-size: 100%; min-height: 555px; background-repeat: no-repeat">
+                <div style="font-size: 50px">欢迎使用</div>
+                <div style="font-size: 30px">新新新闻网</div>
+                <div style="font-size: small">点击左上角按钮滑出侧边栏</div>
+                <div class="call-to-action">
+                    <a href="/latest" class="btn btn-success">最新资讯</a>
+                    <a href="/client" class="btn btn-info">客户端下载</a>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- /#page-content-wrapper -->
 
 </div>
 <script src="js/jquery.min.js" type="text/javascript"></script>

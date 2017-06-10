@@ -22,36 +22,6 @@
 
     <!-- Sidebar -->
     <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-        <ul class="nav sidebar-nav">
-            <li class="sidebar-brand">
-                <a href="#">
-                    新新新闻网
-                </a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-fw fa-home"></i>  首页  </a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-fw fa-flag"></i>  新闻栏目  </a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-fw fa-trophy"></i>  最新资讯  </a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-fw fa-user"></i>  注册/登录  </a>
-            </li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-search"></i>  搜索  <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                    <input type="text" class="form-control" placeholder="请输入关键词" />
-                    <li><a href="#">按标题搜索</a></li>
-                    <li><a href="#">按内容搜索</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-fw fa-mobile icon-large"></i>  客户端下载  </a>
-            </li>
-        </ul>
     </nav>
     <!-- /#sidebar-wrapper -->
 
@@ -110,7 +80,7 @@
                                     </form>
                                     <form id="register-form" action="/user/register" data-toggle="validator" method="post" role="form" style="display: none;">
                                         <div class="form-group">
-                                            <input type="text" name="username" id="register-username" tabindex="1" class="form-control" placeholder="请输入用户名" data-minlength="6" value="">
+                                            <input type="text" name="username" id="register-username" tabindex="1" class="form-control" placeholder="请输入6-16位用户名，由数字、大小写字母和下划线组成" data-minlength="6" value="">
                                         </div>
                                         <div class="form-group">
                                             <input type="email" name="email" id="register-email" tabindex="1" class="form-control" placeholder="请输入邮箱" value="">
@@ -158,35 +128,6 @@
 
 <script src='js/bootstrap.min.js'></script>
 <script src="js/user.js" type="text/javascript"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        var trigger = $('.hamburger'),
-            overlay = $('.overlay'),
-            isClosed = false;
-
-        trigger.click(function () {
-            hamburger_cross();
-        });
-
-        function hamburger_cross() {
-
-            if (isClosed == true) {
-                overlay.hide();
-                trigger.removeClass('is-open');
-                trigger.addClass('is-closed');
-                isClosed = false;
-            } else {
-                overlay.show();
-                trigger.removeClass('is-closed');
-                trigger.addClass('is-open');
-                isClosed = true;
-            }
-        }
-
-        $('[data-toggle="offcanvas"]').click(function () {
-            $('#wrapper').toggleClass('toggled');
-        });
-    });
-</script>
+<script src="js/nav.js" type="text/javascript"></script>
 </body>
 </html>

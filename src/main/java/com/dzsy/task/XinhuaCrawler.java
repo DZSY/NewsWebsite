@@ -153,10 +153,18 @@ public class XinhuaCrawler implements Crawler{
                             else if (!doc.select(".article").isEmpty()) {
                                 paragraphs = doc.select(".article").first().select("p");
                             }
-
-
-
                         }
+                        title = title.replace('０','0');
+                        title = title.replace('１','1');
+                        title = title.replace('２','2');
+                        title = title.replace('３','3');
+                        title = title.replace('４','4');
+                        title = title.replace('５','5');
+                        title = title.replace('６','6');
+                        title = title.replace('７','7');
+                        title = title.replace('８','8');
+                        title = title.replace('９','9');
+
                         Elements imgs = paragraphs.select("img[src]");
                         for (Element element : imgs) {
                             if (!element.attr("src").trim().startsWith("http://")) {

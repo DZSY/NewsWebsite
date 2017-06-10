@@ -2,30 +2,67 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e31f7ab-d3e6-4525-a731-488a197d0dab" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/columns_online.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/home_online.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/singlecolumn_online.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/js/search.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/columns_online.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/followed_columns_online.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/home_online.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/singlecolumn_online.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/springmvc/js/search.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/followed_columns_online.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/followed_columns.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dzsy/controller/MainController.class" afterPath="$PROJECT_DIR$/target/classes/com/dzsy/controller/MainController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dzsy/controller/NewsColumnController$1.class" afterPath="$PROJECT_DIR$/target/classes/com/dzsy/controller/NewsColumnController$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dzsy/controller/NewsColumnController$2.class" afterPath="$PROJECT_DIR$/target/classes/com/dzsy/controller/NewsColumnController$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dzsy/controller/NewsColumnController.class" afterPath="$PROJECT_DIR$/target/classes/com/dzsy/controller/NewsColumnController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dzsy/dao/BrowseDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/dzsy/dao/BrowseDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dzsy/dao/NewsColumnDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/dzsy/dao/NewsColumnDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dzsy/entity/NewsSkeleton.class" afterPath="$PROJECT_DIR$/target/classes/com/dzsy/entity/NewsSkeleton.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dzsy/service/BrowseService.class" afterPath="$PROJECT_DIR$/target/classes/com/dzsy/service/BrowseService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dzsy/task/TaskJob.class" afterPath="$PROJECT_DIR$/target/classes/com/dzsy/task/TaskJob.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/dzsy/task/XinhuaCrawler.class" afterPath="$PROJECT_DIR$/target/classes/com/dzsy/task/XinhuaCrawler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/controller/MainController.class" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/controller/MainController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/controller/NewsColumnController$1.class" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/controller/NewsColumnController$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/controller/NewsColumnController$2.class" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/controller/NewsColumnController$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/controller/NewsColumnController.class" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/controller/NewsColumnController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/dao/BrowseDAO.class" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/dao/BrowseDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/dao/NewsColumnDAO.class" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/dao/NewsColumnDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/entity/NewsSkeleton.class" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/entity/NewsSkeleton.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/service/BrowseService.class" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/service/BrowseService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/task/TaskJob.class" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/task/TaskJob.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/task/XinhuaCrawler.class" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/com/dzsy/task/XinhuaCrawler.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dzsy/controller/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/com/dzsy/controller/MainController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dzsy/controller/NewsColumnController.java" afterPath="$PROJECT_DIR$/src/main/java/com/dzsy/controller/NewsColumnController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dzsy/dao/BrowseDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/dzsy/dao/BrowseDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dzsy/dao/NewsColumnDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/dzsy/dao/NewsColumnDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dzsy/entity/NewsSkeleton.java" afterPath="$PROJECT_DIR$/src/main/java/com/dzsy/entity/NewsSkeleton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dzsy/service/BrowseService.java" afterPath="$PROJECT_DIR$/src/main/java/com/dzsy/service/BrowseService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dzsy/task/TaskJob.java" afterPath="$PROJECT_DIR$/src/main/java/com/dzsy/task/TaskJob.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dzsy/task/XinhuaCrawler.java" afterPath="$PROJECT_DIR$/src/main/java/com/dzsy/task/XinhuaCrawler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/home_online.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/home_online.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/home_online.jsp" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/home_online.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/src/main/resources/mvc-dispatcher-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/activate.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/activate.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/columns.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/columns.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/home.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/home.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/latest.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/latest.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/news.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/news.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/recommend.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/recommend.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/search_body_result.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/search_body_result.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/search_title_result.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/search_title_result.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/singlecolumn.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/singlecolumn.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/follow.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/follow.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/nav.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/nav.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/user.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/user.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/target/classes/mvc-dispatcher-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/classes/mvc-dispatcher-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/activate.jsp" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/activate.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/columns.jsp" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/columns.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/home.jsp" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/home.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/latest.jsp" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/latest.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/news.jsp" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/news.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/recommend.jsp" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/recommend.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/search_body_result.jsp" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/search_body_result.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/search_title_result.jsp" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/search_title_result.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/singlecolumn.jsp" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/singlecolumn.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/user.jsp" afterPath="$PROJECT_DIR$/target/springmvc/WEB-INF/pages/user.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/css/style.css" afterPath="$PROJECT_DIR$/target/springmvc/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/js/follow.js" afterPath="$PROJECT_DIR$/target/springmvc/js/follow.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/js/nav.js" afterPath="$PROJECT_DIR$/target/springmvc/js/nav.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/springmvc/js/user.js" afterPath="$PROJECT_DIR$/target/springmvc/js/user.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,43 +85,125 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BrowseDAO.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/dao/BrowseDAO.java">
+      <file leaf-file-name="recommend.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/recommend.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="84" column="42" lean-forward="true" selection-start-line="84" selection-start-column="42" selection-end-line="84" selection-end-column="42" />
+            <state relative-caret-position="795">
+              <caret line="53" column="82" lean-forward="false" selection-start-line="53" selection-start-column="82" selection-end-line="53" selection-end-column="82" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewsColumnController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/controller/NewsColumnController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="274" column="29" lean-forward="true" selection-start-line="274" selection-start-column="29" selection-end-line="274" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewsColumnService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/service/NewsColumnService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="34" column="34" lean-forward="false" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
               <folding>
-                <marker date="1495956113000" expanded="true" signature="2709:2873" ph="select news.... news" />
-                <marker date="1495956113000" expanded="true" signature="2709:2875" ph="select news.... news" />
-                <marker date="1495956113000" expanded="true" signature="3375:3498" ph="select disti... news" />
-                <marker date="1495956113000" expanded="true" signature="3582:3927" ph="SELECT news_... " />
-                <marker date="1495956113000" expanded="true" signature="3582:3928" ph="SELECT news_... " />
-                <marker date="1495956113000" expanded="true" signature="3834:3927" ph="SELECT news_... " />
+                <element signature="e#938#939#0" expanded="true" />
+                <element signature="e#1005#1006#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XinhuaCrawler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/task/XinhuaCrawler.java">
+      <file leaf-file-name="NewsColumnDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/dao/NewsColumnDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+            <state relative-caret-position="1155">
+              <caret line="97" column="5" lean-forward="false" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
               <folding>
-                <marker date="1495954967000" expanded="true" signature="1497:1548" ph="SELECT * FRO... crawled" />
-                <marker date="1495954967000" expanded="true" signature="1696:1747" ph="INSERT INTO crawled" />
-                <marker date="1495954967000" expanded="true" signature="5428:5476" ph="select * fro... news" />
-                <marker date="1495954967000" expanded="true" signature="7551:7654" ph="INSERT INTO news" />
+                <marker date="1495947887000" expanded="true" signature="1214:1258" ph="SELECT COUNT... news" />
+                <marker date="1495947887000" expanded="true" signature="1430:1488" ph="SELECT DISTI... news" />
+                <marker date="1495947887000" expanded="true" signature="1662:1693" ph="SELECT COUNT... news" />
+                <marker date="1495947887000" expanded="true" signature="1826:1898" ph="SELECT COUNT... news" />
+                <marker date="1495947887000" expanded="true" signature="2125:2200" ph="SELECT news_... " />
+                <marker date="1495947887000" expanded="true" signature="2263:2379" ph="SELECT news_... " />
+                <marker date="1495947887000" expanded="true" signature="2913:3089" ph="SELECT COUNT... news" />
+                <marker date="1495947887000" expanded="true" signature="3302:3553" ph="SELECT news_... " />
+                <marker date="1495947887000" expanded="true" signature="3692:3867" ph="SELECT COUNT... news" />
+                <marker date="1495947887000" expanded="true" signature="4223:4473" ph="SELECT news_... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CrawlerDB.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/task/CrawlerDB.java">
+      <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="19" column="30" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="45" selection-end-column="1" />
+            <state relative-caret-position="270">
+              <caret line="120" column="56" lean-forward="false" selection-start-line="120" selection-start-column="56" selection-end-line="120" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="705">
+              <caret line="47" column="22" lean-forward="false" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mvc-dispatcher-servlet.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mvc-dispatcher-servlet.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActivatingDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/dao/ActivatingDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-49">
+              <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1496991078000" expanded="true" signature="776:832" ph="SELECT activ... activating" />
+                <marker date="1496991078000" expanded="true" signature="776:849" ph="SELECT activ... activating" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/dao/UserDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+              <folding>
+                <marker date="1496991126000" expanded="true" signature="797:839" ph="select user_... user" />
+                <marker date="1496991126000" expanded="true" signature="797:856" ph="select user_... user" />
+                <marker date="1496991126000" expanded="true" signature="977:1029" ph="select email... user" />
+                <marker date="1496991126000" expanded="true" signature="1193:1235" ph="SELECT user_... user" />
+                <marker date="1496991126000" expanded="true" signature="1193:1286" ph="SELECT user_... user" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -106,36 +225,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>taskJo</find>
-      <find>task</find>
-      <find>task:annotation-driven</find>
-      <find>taskJob</find>
-      <find>crawl</find>
-      <find>Xinhua</find>
-      <find>columnName</find>
-      <find>btn-default</find>
-      <find>lg</find>
-      <find>disabled</find>
-      <find>fa-star</find>
-      <find>tn</find>
-      <find>btn</find>
-      <find>background</find>
-      <find>btn-xs</find>
-      <find>sidebar-nav</find>
-      <find>220</find>
-      <find>font-size</find>
-      <find>location</find>
+      <find>regexp</find>
+      <find>emailAddress</find>
+      <find>dzsy@zju.e</find>
+      <find>isFollowed</find>
+      <find>search</find>
+      <find>search.js</find>
+      <find>btn-</find>
+      <find>btn-danger</find>
+      <find>btn-success</find>
+      <find>cs</find>
+      <find>resources</find>
+      <find>css</find>
+      <find>财经</find>
+      <find>证券</find>
+      <find>房产</find>
+      <find>科技</find>
+      <find>数码</find>
+      <find>教育</find>
+      <find>时尚</find>
+      <find>军事</find>
+      <find>公益</find>
+      <find>手机</find>
+      <find>OR true</find>
+      <find>activating</find>
       <find>activation</find>
-      <find>dropdown-toggle</find>
-      <find>dropdown</find>
-      <find>input</find>
-      <find>brand</find>
-      <find>335556</find>
-      <find>delete</find>
-      <find>getAttri</find>
-      <find>columnsList</find>
-      <find>user</find>
-      <find>object</find>
+      <find>username</find>
+      <find>follow</find>
+      <find>美国</find>
+      <find>news</find>
+      <find>title</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -149,57 +268,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/error.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/newscolumns.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/aColumn.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/entity/NewsColumn.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/dzsy/entity/New.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dzsy/entity/News.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/activate.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/dzsy/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dzsy/entity/Activation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/dao/ActivatingDAO.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css" />
         <option value="$USER_HOME$/Downloads/201610121612-2/css/style.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/news.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/nav.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/style.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/search_result.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/search.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/latest.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/search_body_result.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/search_title_result.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/home.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/singlecolumn.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/follow.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/columns.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/columns_online.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/followed_columns_online.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/singlecolumn_online.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/dzsy/entity/FollowColumn.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dzsy/service/NewsColumnService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dzsy/service/FollowService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/follow.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/dzsy/entity/s.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dzsy/entity/FollowColumnPrimaryKey.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mvc-dispatcher-servlet.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/dao/UserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/dao/FollowDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dzsy/entity/BrowseHistoryPrimaryKey.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dzsy/entity/BrowseHistory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dzsy/dao/NewsColumnDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dzsy/service/BrowseService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/controller/NewsColumnController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/recommend.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/home_online.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/task/TaskJob.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dzsy/entity/NewsSkeleton.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dzsy/task/XinhuaCrawler.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/singlecolumn_online.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/home_online.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/columns_online.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/controller/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/follow.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/search.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/activate.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/columns.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/news.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/nav.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/task/QQNewsCrawler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/task/NetEaseCrawler.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/style.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/home.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/controller/NewsColumnController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/dao/FollowDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/dao/ActivatingDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dzsy/dao/BrowseDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/dao/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dzsy/task/TaskJob.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/followed_columns.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/latest.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/recommend.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/search_body_result.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/search_title_result.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/singlecolumn.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/user.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/mvc-dispatcher-servlet.xml" />
       </list>
     </option>
   </component>
@@ -260,6 +379,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -282,11 +402,155 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewsWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewsWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewsWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewsWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewsWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewsWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewsWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewsWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewsWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewsWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewsWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewsWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -345,6 +609,40 @@
               <option name="myItemId" value="dzsy" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewsWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewsWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dzsy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -376,11 +674,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewsWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewsWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dzsy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -763,7 +1090,6 @@
       <method />
     </configuration>
     <configuration default="false" name="tomcat8" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.14" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="springmvc:war exploded">
@@ -913,11 +1239,21 @@
       <workItem from="1495955665028" duration="21000" />
       <workItem from="1495955705532" duration="20000" />
       <workItem from="1495955760824" duration="352000" />
+      <workItem from="1496644443966" duration="7998000" />
+      <workItem from="1496711209105" duration="8843000" />
+      <workItem from="1496739440383" duration="53000" />
+      <workItem from="1496758927241" duration="1356000" />
+      <workItem from="1496796090528" duration="4857000" />
+      <workItem from="1496835247251" duration="489000" />
+      <workItem from="1496837522664" duration="1599000" />
+      <workItem from="1496971958799" duration="6599000" />
+      <workItem from="1496992452407" duration="2032000" />
+      <workItem from="1497076170857" duration="705000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232583000" />
+    <option name="totallyTimeSpent" value="267114000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="5" y="0" width="1275" height="782" extended-state="0" />
@@ -925,18 +1261,17 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289855" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289855" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6666667" sideWeight="0.5028386" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2768116" sideWeight="0.5060827" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31449276" sideWeight="0.4971614" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49275362" sideWeight="0.4939173" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289855" sideWeight="0.4971614" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29440388" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35279804" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -949,6 +1284,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289855" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289855" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289855" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -990,7 +1326,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="182" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dzsy/dao/ActivatingDAO.java</url>
+          <line>52</line>
+          <properties />
+          <option name="timeStamp" value="190" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="193" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -999,304 +1343,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/search_title_result.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-49">
-          <caret line="74" column="32" lean-forward="false" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="27" column="32" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/follow.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/news.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="57" column="44" lean-forward="false" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/entity/Activation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/entity/NewsColumn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/latest.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="80" column="36" lean-forward="false" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="157" column="43" lean-forward="false" selection-start-line="157" selection-start-column="43" selection-end-line="157" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/singlecolumn_online.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="117" column="62" lean-forward="false" selection-start-line="117" selection-start-column="62" selection-end-line="117" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/followed_columns_online.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="72" column="62" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="72" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/dao/ActivatingDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="52" column="37" lean-forward="false" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="68" column="23" lean-forward="false" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/service/NewsColumnService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="47" column="5" lean-forward="false" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/columns.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="104" column="59" lean-forward="false" selection-start-line="104" selection-start-column="59" selection-end-line="104" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/follow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="35" column="25" lean-forward="true" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="147" column="19" lean-forward="false" selection-start-line="147" selection-start-column="19" selection-end-line="147" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-hibernate.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54">
-          <caret line="31" column="41" lean-forward="false" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/persistence-mysql.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mvc-dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="74" column="62" lean-forward="true" selection-start-line="74" selection-start-column="62" selection-end-line="74" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/entity/FollowColumn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/service/FollowService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="40" lean-forward="true" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/entity/FollowColumnPrimaryKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/columns_online.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="33" column="21" lean-forward="false" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/entity/BrowseHistory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/entity/BrowseHistoryPrimaryKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="69" column="27" lean-forward="false" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/dao/FollowDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="53" column="45" lean-forward="false" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="73" column="54" lean-forward="false" selection-start-line="73" selection-start-column="54" selection-end-line="73" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/dao/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="39" column="23" lean-forward="true" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/dao/NewsColumnDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="78" column="5" lean-forward="false" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/java/net/SocksSocketImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="391" column="0" lean-forward="false" selection-start-line="391" selection-start-column="0" selection-end-line="391" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/singlecolumn.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1138">
-          <caret line="116" column="56" lean-forward="false" selection-start-line="116" selection-start-column="56" selection-end-line="116" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/search_body_result.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="68" column="20" lean-forward="true" selection-start-line="62" selection-start-column="12" selection-end-line="68" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/recommend.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1024">
-          <caret line="73" column="25" lean-forward="true" selection-start-line="73" selection-start-column="25" selection-end-line="73" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/home_online.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="46" column="55" lean-forward="false" selection-start-line="46" selection-start-column="55" selection-end-line="46" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/service/BrowseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/controller/NewsColumnController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="303" column="0" lean-forward="false" selection-start-line="303" selection-start-column="0" selection-end-line="303" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.5.Final/hibernate-core-4.3.5.Final.jar!/org/hibernate/internal/SessionFactoryImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="835" column="0" lean-forward="false" selection-start-line="835" selection-start-column="0" selection-end-line="835" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.5.Final/hibernate-core-4.3.5.Final.jar!/org/hibernate/internal/SQLQueryImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Downloads/word-1.3.jar!/org/apdplat/word/analysis/CosineTextSimilarity.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Downloads/word-1.3.jar!/org/apdplat/word/analysis/TextSimilarity.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.8.RELEASE/spring-webmvc-4.3.8.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="537" column="0" lean-forward="true" selection-start-line="537" selection-start-column="0" selection-end-line="537" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.5.Final/hibernate-core-4.3.5.Final.jar!/org/hibernate/internal/AbstractSessionImpl.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
@@ -1320,52 +1366,378 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/entity/NewsSkeleton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="54" column="37" lean-forward="false" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
+        <state relative-caret-position="165">
+          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/task/TaskJob.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bootstrapvalidator.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-          <folding />
+        <state relative-caret-position="188">
+          <caret line="11" column="19888" lean-forward="false" selection-start-line="11" selection-start-column="19888" selection-end-line="11" selection-end-column="20242" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/service/FollowService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="35" column="70" lean-forward="true" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="70" />
+          <folding>
+            <element signature="e#732#733#0" expanded="false" />
+            <element signature="e#761#762#0" expanded="false" />
+            <element signature="e#879#880#0" expanded="false" />
+            <element signature="e#909#910#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/follow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/columns_online.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/home_online.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/singlecolumn_online.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/search.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/task/Crawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/task/CrawlerDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="19" column="30" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="45" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/nav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="981">
+          <caret line="90" column="16" lean-forward="false" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/task/XinhuaCrawler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+        <state relative-caret-position="15">
+          <caret line="43" column="13" lean-forward="false" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-hibernate.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/home.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="43173" lean-forward="false" selection-start-line="4" selection-start-column="43173" selection-end-line="4" selection-end-column="43173" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/task/NetEaseCrawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1077">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/task/QQNewsCrawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1287">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/persistence-mysql.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="96" column="1" lean-forward="false" selection-start-line="96" selection-start-column="1" selection-end-line="96" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.5.Final/hibernate-core-4.3.5.Final.jar!/org/hibernate/SessionFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/entity/Activation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/dao/FollowDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="50" column="43" lean-forward="true" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
           <folding>
-            <marker date="1495954967000" expanded="true" signature="1497:1548" ph="SELECT * FRO... crawled" />
-            <marker date="1495954967000" expanded="true" signature="1696:1747" ph="INSERT INTO crawled" />
-            <marker date="1495954967000" expanded="true" signature="5428:5476" ph="select * fro... news" />
-            <marker date="1495954967000" expanded="true" signature="7551:7654" ph="INSERT INTO news" />
+            <marker date="1496991094000" expanded="true" signature="1205:1250" ph="SELECT * FRO... follow_column" />
+            <marker date="1496991094000" expanded="true" signature="1205:1306" ph="SELECT * FRO... follow_column" />
+            <marker date="1496991094000" expanded="true" signature="1484:1559" ph="SELECT COUNT... follow_column" />
+            <marker date="1496991094000" expanded="true" signature="1756:1849" ph="SELECT news_... follow_column" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/dao/BrowseDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="84" column="42" lean-forward="true" selection-start-line="84" selection-start-column="42" selection-end-line="84" selection-end-column="42" />
+        <state relative-caret-position="285">
+          <caret line="38" column="47" lean-forward="false" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
           <folding>
-            <marker date="1495956113000" expanded="true" signature="2709:2873" ph="select news.... news" />
-            <marker date="1495956113000" expanded="true" signature="2709:2875" ph="select news.... news" />
-            <marker date="1495956113000" expanded="true" signature="3375:3498" ph="select disti... news" />
-            <marker date="1495956113000" expanded="true" signature="3582:3927" ph="SELECT news_... " />
-            <marker date="1495956113000" expanded="true" signature="3582:3928" ph="SELECT news_... " />
-            <marker date="1495956113000" expanded="true" signature="3834:3927" ph="SELECT news_... " />
+            <element signature="e#866#867#0" expanded="false" />
+            <element signature="e#903#904#0" expanded="false" />
+            <marker date="1496991088000" expanded="true" signature="2709:2875" ph="select news.... news" />
+            <marker date="1496991088000" expanded="true" signature="3375:3498" ph="select disti... news" />
+            <marker date="1496991088000" expanded="true" signature="3582:3927" ph="SELECT news_... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/activate.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="83" column="56" lean-forward="true" selection-start-line="83" selection-start-column="56" selection-end-line="83" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/task/TaskJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/error.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/columns.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="53" lean-forward="false" selection-start-line="44" selection-start-column="53" selection-end-line="44" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/followed_columns.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" column="82" lean-forward="false" selection-start-line="45" selection-start-column="31" selection-end-line="46" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/latest.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="76" column="82" lean-forward="false" selection-start-line="76" selection-start-column="82" selection-end-line="76" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/news.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="22" lean-forward="false" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1040">
+          <caret line="130" column="56" lean-forward="true" selection-start-line="130" selection-start-column="56" selection-end-line="130" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/singlecolumn.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="59" column="55" lean-forward="false" selection-start-line="59" selection-start-column="55" selection-end-line="59" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/search_title_result.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/search_body_result.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="53" column="82" lean-forward="false" selection-start-line="53" selection-start-column="82" selection-end-line="53" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/recommend.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" column="82" lean-forward="false" selection-start-line="53" selection-start-column="82" selection-end-line="53" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/service/NewsColumnService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="34" column="34" lean-forward="false" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+          <folding>
+            <element signature="e#938#939#0" expanded="true" />
+            <element signature="e#1005#1006#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/dao/NewsColumnDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="97" column="5" lean-forward="false" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
+          <folding>
+            <marker date="1495947887000" expanded="true" signature="1214:1258" ph="SELECT COUNT... news" />
+            <marker date="1495947887000" expanded="true" signature="1430:1488" ph="SELECT DISTI... news" />
+            <marker date="1495947887000" expanded="true" signature="1662:1693" ph="SELECT COUNT... news" />
+            <marker date="1495947887000" expanded="true" signature="1826:1898" ph="SELECT COUNT... news" />
+            <marker date="1495947887000" expanded="true" signature="2125:2200" ph="SELECT news_... " />
+            <marker date="1495947887000" expanded="true" signature="2263:2379" ph="SELECT news_... " />
+            <marker date="1495947887000" expanded="true" signature="2913:3089" ph="SELECT COUNT... news" />
+            <marker date="1495947887000" expanded="true" signature="3302:3553" ph="SELECT news_... " />
+            <marker date="1495947887000" expanded="true" signature="3692:3867" ph="SELECT COUNT... news" />
+            <marker date="1495947887000" expanded="true" signature="4223:4473" ph="SELECT news_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="120" column="56" lean-forward="false" selection-start-line="120" selection-start-column="56" selection-end-line="120" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" column="22" lean-forward="false" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mvc-dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/dao/ActivatingDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-49">
+          <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1496991078000" expanded="true" signature="776:832" ph="SELECT activ... activating" />
+            <marker date="1496991078000" expanded="true" signature="776:849" ph="SELECT activ... activating" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/dao/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <marker date="1496991126000" expanded="true" signature="797:839" ph="select user_... user" />
+            <marker date="1496991126000" expanded="true" signature="797:856" ph="select user_... user" />
+            <marker date="1496991126000" expanded="true" signature="977:1029" ph="select email... user" />
+            <marker date="1496991126000" expanded="true" signature="1193:1235" ph="SELECT user_... user" />
+            <marker date="1496991126000" expanded="true" signature="1193:1286" ph="SELECT user_... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dzsy/controller/NewsColumnController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="274" column="29" lean-forward="true" selection-start-line="274" selection-start-column="29" selection-end-line="274" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>

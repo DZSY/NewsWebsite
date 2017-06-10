@@ -17,39 +17,8 @@
 <body>
 <div id="wrapper">
     <div class="overlay"></div>
-
     <!-- Sidebar -->
     <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-        <ul class="nav sidebar-nav">
-            <li class="sidebar-brand">
-                <a href="#">
-                    新新新闻网
-                </a>
-            </li>
-            <li>
-                <a href="#"><i class="glyphicon glyphicon-home"></i>首页</a>
-            </li>
-            <li>
-                <a href="/column"><i class="glyphicon glyphicon-th-list"></i>新闻栏目</a>
-            </li>
-            <li>
-                <a href="#"><i class="glyphicon glyphicon-globe"></i>最新资讯</a>
-            </li>
-            <li>
-                <a href="/user"><i class="glyphicon glyphicon-user"></i>注册/登录</a>
-            </li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i>搜索<span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                    <input type="text" class="form-control" placeholder="请输入关键词" />
-                    <li><a href="#">按标题搜索</a></li>
-                    <li><a href="#">按内容搜索</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#"><i class="glyphicon glyphicon-phone"></i>客户端下载</a>
-            </li>
-        </ul>
     </nav>
     <div id="page-content-wrapper">
         <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
@@ -78,7 +47,7 @@
                             </a>
                         </td>
                         <td width="20%">
-                            <button class="btn btn-sm ${column["isFollowed"]?"btn-danger":"btn-success"}" onclick="location=('/user')">
+                            <button class="btn btn-sm ${column["isFollowed"]?"btn-danger":"btn-success"}" onclick=${column["isFollowed"]?"unfollow":"follow"}(this,"${column["columnName"]}")>
                                 <span class="glyphicon ${column["isFollowed"]?"glyphicon-minus":"glyphicon-plus"}"></span>
                                     ${column["isFollowed"]?"取消关注":"加入关注"}
                             </button>
@@ -103,4 +72,5 @@
 <script src="../js/jquery.min.js" type="text/javascript"></script>
 <script src='../js/bootstrap.min.js'></script>
 <script src="../js/nav.js" type="text/javascript"></script>
+<script src="../js/follow.js" type="text/javascript"></script>
 </html>

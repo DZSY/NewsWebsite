@@ -24,10 +24,12 @@ public class TaskJob {
         crawlerDB = new CrawlerDB();
         crawlers = new LinkedList<>();
         crawlers.add(new XinhuaCrawler(crawlerDB));
+        crawlers.add(new NetEaseCrawler(crawlerDB));
+        crawlers.add(new QQNewsCrawler(crawlerDB));
         WordSegmenter.seg("初始化");
     }
     //每10分钟爬一次，每个新闻门户网站爬5分钟
-    @Scheduled(fixedRate = 600000)
+    @Scheduled(fixedRate = 1400000)
     public void job(){
         for (Crawler crawler : crawlers) {
             crawler.start();
@@ -47,6 +49,8 @@ public class TaskJob {
             crawlerDB = new CrawlerDB();
             crawlers = new LinkedList<>();
             crawlers.add(new XinhuaCrawler(crawlerDB));
+            crawlers.add(new NetEaseCrawler(crawlerDB));
+            crawlers.add(new QQNewsCrawler(crawlerDB));
         }
     }
 }

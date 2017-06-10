@@ -20,38 +20,6 @@
 
     <!-- Sidebar -->
     <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-        <ul class="nav sidebar-nav">
-            <li class="sidebar-brand">
-                <a href="#">
-                    新新新闻网
-                </a>
-            </li>
-            <li>
-                <a href="#"><i class="glyphicon glyphicon-home"></i>  首页  </a>
-            </li>
-            <li>
-                <a href="/column"><i class="glyphicon glyphicon-th-list"></i>  新闻栏目  </a>
-            </li>
-            <li>
-                <a href="/latest"><i class="glyphicon glyphicon-globe"></i>  最新资讯  </a>
-            </li>
-            <li>
-                <a href="/user"><i class="glyphicon glyphicon-user"></i>  注册/登录  </a>
-            </li>
-            <li>
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i>  搜索  <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                    <form action="" id="searchForm" name="searchForm" method=post>
-                        <input type="text" id="searchItem" name="searchItem" class="form-control" placeholder="请输入关键词" />
-                        <li><a onclick="window.searchForm.action='/searchTitle/1';searchForm.submit()">按标题搜索</a></li>
-                        <li><a href="#">按内容搜索</a></li>
-                    </form>
-                </ul>
-            </li>
-            <li>
-                <a href="#"><i class="glyphicon glyphicon-phone"></i>  客户端下载  </a>
-            </li>
-        </ul>
     </nav>
     <div id="page-content-wrapper">
         <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
@@ -83,6 +51,7 @@
                         <td width="70%">
                             <a href="/news/${news["newsID"]}"
                                onmouseover="this.style.cssText='color:#000000'"
+                               onmouseleave="this.style.cssText='color: #616161;'"
                                style="color: #616161;">
                                     ${news["newsTitle"]}
                             </a>

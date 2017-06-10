@@ -63,6 +63,18 @@ public class NewsColumnController {
         put("产业园","industry");
         put("证券",  "finance");
         put("传媒",  "media");
+        put("数码",  "digit");
+        put("文化",  "culture");
+        put("社会",  "society");
+        put("历史",  "history");
+        put("旅游",  "travel");
+        put("热点",  "hot");
+        put("国内",  "domestic");
+        put("探索",  "discover");
+        put("本地",  "local");
+        put("女人",  "lady");
+        put("收藏",  "collect");
+        put("手机",  "mobile");
     }};
     private static final Map<String, String> mapLabelName = new HashMap<String , String>(){{
         put("politics", "时政");
@@ -92,6 +104,18 @@ public class NewsColumnController {
         put("industry", "产业园");
         put("finance", "证券");
         put("media", "传媒");
+        put("digit", "数码");
+        put("culture", "文化");
+        put("society", "社会");
+        put("history", "历史");
+        put("travel", "旅游");
+        put("hot", "热点");
+        put("domestic", "国内");
+        put("discover", "探索");
+        put("local", "本地");
+        put("lady", "女人");
+        put("collect", "收藏");
+        put("mobile", "手机");
     }};
     private final SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
@@ -111,17 +135,15 @@ public class NewsColumnController {
 
         ModelAndView modelAndView = new ModelAndView();
         if (httpSession.getAttribute("activated") != null && httpSession.getAttribute("username") != null) {
-            modelAndView.setViewName("columns_online");
             String username = httpSession.getAttribute("username").toString();
             for (Object column : columnsList)
                 list.add(new NewsColumn(column.toString(), followService.isFollowd(username, column.toString()), mapNameLabel.get(column.toString())));
         }
         else {
-            modelAndView.setViewName("columns");
             for (Object column : columnsList)
                 list.add(new NewsColumn(column.toString(), false, mapNameLabel.get(column.toString())));
         }
-
+        modelAndView.setViewName("columns");
         modelAndView.addObject("list", list);
         modelAndView.addObject("count", columnsPageCount);
         modelAndView.addObject("start", (page-1) * columnsPageCount);
@@ -154,9 +176,6 @@ public class NewsColumnController {
         modelAndView.addObject("page", page);
         modelAndView.addObject("totalPage", totalPage);
 
-        if (httpSession.getAttribute("activated") != null) {
-            modelAndView.setViewName("latest_online");
-        }
         modelAndView.setViewName("latest");
         return modelAndView;
     }
@@ -180,7 +199,6 @@ public class NewsColumnController {
             if (httpSession.getAttribute("username") == null)
                 return new ModelAndView("redirect:/error");
             browseService.BrowseNews(httpSession.getAttribute("username").toString(), ID);
-            modelAndView.setViewName("news_online");
         }
         modelAndView.setViewName("news");
         return modelAndView;
@@ -205,9 +223,6 @@ public class NewsColumnController {
         modelAndView.addObject("totalPage", totalPage);
         modelAndView.addObject("searchItem", searchItem);
 
-        if (httpSession.getAttribute("activated") != null) {
-            modelAndView.setViewName("search_title_result_online");
-        }
         modelAndView.setViewName("search_title_result");
         return modelAndView;
     }
@@ -231,9 +246,6 @@ public class NewsColumnController {
         modelAndView.addObject("totalPage", totalPage);
         modelAndView.addObject("searchItem", searchItem);
 
-        if (httpSession.getAttribute("activated") != null) {
-            modelAndView.setViewName("search_body_result_online");
-        }
         modelAndView.setViewName("search_body_result");
         return modelAndView;
     }
@@ -275,7 +287,6 @@ public class NewsColumnController {
 
         if (httpSession.getAttribute("activated") == null || httpSession.getAttribute("username") == null)
             return new ModelAndView("redirect:/error");
-
         String username = httpSession.getAttribute("username").toString();
         int totalPage = (followService.getFollowedColumnsTotalCount(username) - 1) / columnsPageCount + 1;
         if (page < 1 || page > totalPage)
@@ -283,7 +294,7 @@ public class NewsColumnController {
         List followedColumnsList = followService.getFollowedColumnsPage(username,(page-1) * columnsPageCount, columnsPageCount);
         List<NewsColumn> list = new LinkedList<>();
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("followed_columns_online");
+        modelAndView.setViewName("followed_columns");
         for (Object column : followedColumnsList)
             list.add(new NewsColumn(column.toString(), true, mapNameLabel.get(column.toString())));
         modelAndView.addObject("username", username);
@@ -348,13 +359,9 @@ public class NewsColumnController {
             if (username == null || columnName == null)
                 return new ModelAndView("redirect:/error");
             modelAndView.addObject("isFollowed", followService.isFollowd(username, columnName));
-            modelAndView.setViewName("singlecolumn_online");
-            return modelAndView;
         }
         modelAndView.setViewName("singlecolumn");
         return modelAndView;
     }
-
-
 }
 

@@ -74,6 +74,7 @@
                         <td width="70%">
                             <a href="/news/${news["newsID"]}"
                                onmouseover="this.style.cssText='color:#000000'"
+                               onmouseleave="this.style.cssText='color: #616161;'"
                                style="color: #616161;">
                                     ${news["newsTitle"]}
                             </a>
@@ -100,35 +101,5 @@
 </body>
 <script src="../js/jquery.min.js" type="text/javascript"></script>
 <script src='../js/bootstrap.min.js'></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        var trigger = $('.hamburger'),
-            overlay = $('.overlay'),
-            isClosed = false;
-
-        trigger.click(function () {
-            hamburger_cross();
-        });
-
-        function hamburger_cross() {
-
-            if (isClosed == true) {
-                overlay.hide();
-                trigger.removeClass('is-open');
-                trigger.addClass('is-closed');
-                isClosed = false;
-            } else {
-                overlay.show();
-                trigger.removeClass('is-closed');
-                trigger.addClass('is-open');
-                isClosed = true;
-            }
-        }
-
-        $('[data-toggle="offcanvas"]').click(function () {
-            $('#wrapper').toggleClass('toggled');
-        });
-
-    });
-</script>
+<script src="../js/nav.js" type="text/javascript"></script>
 </html>

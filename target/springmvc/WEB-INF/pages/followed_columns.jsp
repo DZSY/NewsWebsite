@@ -9,14 +9,18 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>新新新闻网-新闻栏目</title>
+    <title>关注栏目</title>
     <meta charset="UTF-8">
     <link rel='stylesheet' href='../css/bootstrap.min.css'>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 <div id="wrapper">
+
     <div class="overlay"></div>
+    <!-- Sidebar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+    </nav>
 
     <div id="page-content-wrapper">
         <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
@@ -30,7 +34,7 @@
                 <tr>
                     <th width="10%">#</th>
                     <th width="70%">栏目</th>
-                    <th width="20%">加入/取消关注</th>
+                    <th width="20%">取消关注</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -40,13 +44,15 @@
                         <td width="70%">
                             <a href="/${column["columnLabel"]}"
                                onmouseover="this.style.cssText='color:#000000'"
+                               onmouseleave="this.style.cssText='color: #616161;'"
                                style="color: #616161;">
                                     ${column["columnName"]}
                             </a>
                         </td>
                         <td width="20%">
-                            <button class="btn btn-sm ${column["isFollowed"]?"btn-danger":"btn-success"}" onclick=${column["isFollowed"]?"unfollow":"follow"}(this,"${column["columnName"]}")>
-                                <span class="glyphicon ${column["isFollowed"]?"glyphicon-minus":"glyphicon-plus"}"></span>${column["isFollowed"]?" 取消关注":" 加入关注"}
+                            <button class="btn btn-sm btn-danger" onclick=unfollow(this,"${column["columnName"]}")>
+                                <span class="glyphicon glyphicon-minus"></span>
+                                取消关注
                             </button>
                         </td>>
                     </tr>
@@ -55,11 +61,11 @@
             </table>
             <nav style="text-align: center">
                 <ul class="pagination">
-                    <li class=${page==1?"disabled":""}><a href="/column/${page-1}" aria-label="Previous">&laquo;</a></li>
+                    <li class=${page==1?"disabled":""}><a href="/follow/${page-1}" aria-label="Previous">&laquo;</a></li>
                     <c:forEach var="i" begin="${page-2 < 1? 1 : page-2}" end="${page+2 > totalPage ? totalPage : page+2}" varStatus="status">
-                        <li><a href="/column/${begin + status.index}">${begin + status.index}</a></li>
+                        <li><a href="/follow/${begin + status.index}">${begin + status.index}</a></li>
                     </c:forEach >
-                    <li class=${page==totalPage?"disabled":""}><a href="/column/${page+1}" aria-label="Next">&raquo;</a></li>
+                    <li class=${page==totalPage?"disabled":""}><a href="/follow/${page+1}" aria-label="Next">&raquo;</a></li>
                 </ul>
             </nav>
         </div>

@@ -34,6 +34,7 @@
     <mvc:resources location="/js/" mapping="/script/**"></mvc:resources>
     <mvc:resources location="/fonts/" mapping="/fonts/**"></mvc:resources>
     <mvc:resources location="/css/" mapping="/css/**"></mvc:resources>
+    <mvc:resources location="/images/" mapping="/images/**"></mvc:resources>
 
     <!--ViewResolver 视图解析器-->
     <!--用于支持Servlet、JSP视图解析-->

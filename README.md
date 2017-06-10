@@ -393,3 +393,14 @@ FULLTEXT (title,body) WITH PARSER ngram
 | news_id | int          | not null                              | 新闻id |
 | time    | timestamp(0) | not null DEFAULT CURRENT_TIMESTAMP(0) | 浏览时间 |
 
+
+
+# 遇到的问题
+## MySQL全文索引
+在使用全文索引的过程中，由于MySQL的默认ft_min_word_len是4，不适用于中文索引，所以需要改成1，但是我的MySQL是用Homebrew安装的，网上查到的方法很多都不适用，花了很长时间找到了以下解决办法：
+1. `mysql.server stop`
+2. 用`which mysql`找到mysql快捷方式，再找到运行目录，我的是`/usr/local/Cellar/mysql/5.7.17/bin`
+3. `./mysqld_safe --ft_min_word_len=1 &`
+4. 上一步可能会遇到`mysqld_safe A mysqld process already exists`的问题，我的方法是直接找到mysqld进程kill掉，动作要快，kill成功之后马上运行这条命令，否则这个进程很快又会启动
+5. `mysql.server start` (先把前一个mysqld进程kill掉)
+6. `SELECT title FROM `news` WHERE MATCH(`title`) AGAINST('*加多宝*' IN BOOLEAN MODE);`不加`*`和`IN BOOLEAN MODE`会搜索不到内容

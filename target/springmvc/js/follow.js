@@ -4,21 +4,30 @@
 var follow = function (button, columnName) {
     $.ajax({
         type: 'POST',
-        url: '/toFollow',
-        data: {
-            columnName: columnName
-        },
+        url: '/isActivated',
         success: function (msg) {
-            if (msg == "ok") {
-                $(button)
-                    .removeClass("btn-success")
-                    .addClass('btn-danger')
-                    .attr("onclick", "unfollow(this,\""+columnName+"\")")
-                    .html('<span ' +
-                    'class="glyphicon glyphicon-minus"></span>' +
-                    ' 取消关注</button>');
+            if (msg == "yes") {
+                $.ajax({
+                    type: 'POST',
+                    url: '/toFollow',
+                    data: {
+                        columnName: columnName
+                    },
+                    success: function (msg) {
+                        if (msg == "ok") {
+                            $(button)
+                                .removeClass("btn-success")
+                                .addClass('btn-danger')
+                                .attr("onclick", "unfollow(this,\"" + columnName + "\")")
+                                .html('<span ' +
+                                    'class="glyphicon glyphicon-minus"></span>' +
+                                    ' 取消关注</button>');
+                        }
+                        else alert(msg);
+                    }
+                });
             }
-            else alert(msg);
+            else window.location.href = "/user";
         }
     });
 }
@@ -27,21 +36,30 @@ var follow = function (button, columnName) {
 var unfollow = function (button,columnName) {
     $.ajax({
         type: 'POST',
-        url: '/unFollow',
-        data: {
-            columnName: columnName
-        },
+        url: '/isActivated',
         success: function (msg) {
-            if (msg == "ok") {
-                $(button)
-                    .removeClass("btn-danger")
-                    .addClass('btn-success')
-                    .attr("onclick", "follow(this,\""+columnName+"\")")
-                    .html('<span ' +
-                        'class="glyphicon glyphicon-plus"></span>' +
-                        ' 加入关注</button>');
+            if (msg == "yes") {
+                $.ajax({
+                    type: 'POST',
+                    url: '/unFollow',
+                    data: {
+                        columnName: columnName
+                    },
+                    success: function (msg) {
+                        if (msg == "ok") {
+                            $(button)
+                                .removeClass("btn-danger")
+                                .addClass('btn-success')
+                                .attr("onclick", "follow(this,\"" + columnName + "\")")
+                                .html('<span ' +
+                                    'class="glyphicon glyphicon-plus"></span>' +
+                                    ' 加入关注</button>');
+                        }
+                        else alert(msg);
+                    }
+                });
             }
-            else alert(msg);
+            else window.location.href = "/user";
         }
     });
 }
